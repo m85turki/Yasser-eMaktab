@@ -11,35 +11,44 @@
 	<title>Meeting page</title>
 
 	<!-- BEGIN VENDOR CSS-->
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/ui/prism.min.css">
 	<!-- END VENDOR CSS-->
 	<!-- BEGIN MODERN CSS-->
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/custom-rtl.css">
 	<!-- END MODERN CSS-->
 	<!-- BEGIN Page Level CSS-->
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/calendars/fullcalendar.min.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/pages/project.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
 	<!-- END Page Level CSS-->
 	<!-- BEGIN Custom CSS-->
-	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
-	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
-	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style-s.css">
 	<!-- END Custom CSS-->
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/selects/select2.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/animate/animate.css">
 	<!-- END Custom CSS-->
+
+	<style>
+		.modal:nth-of-type(even) {
+			z-index: 1050 !important;
+		}
+		.modal-backdrop.show:nth-of-type(even) {
+			z-index: 1049 !important;
+		}
+	</style>
 </head>
 
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
@@ -191,7 +200,7 @@
 					<li>
 						<div class="user-options">
 							<span>اسم الموظف</span>
-							<img src="../../../assets/images/default-avatar.png">
+							<img src="../../assets/images/default-avatar.png">
 							<ul class="user-option-menu">
 								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
 								</li>
@@ -349,6 +358,61 @@
 												</ul>
 											</div>
 										</h4>
+
+										<h2>Stacked Bootstrap Modal Example.</h2>
+										<a data-toggle="modal" href="#myModal" class="btn btn-primary">Launch modal</a>
+									   
+									   <div class="modal fade" id="myModal">
+										   <div class="modal-dialog">
+											   <div class="modal-content">
+												   <div class="modal-header">
+													   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														   <h4 class="modal-title">Modal 1</h4>
+									   
+												   </div>
+												   <div class="container"></div>
+												   <div class="modal-body">Content for the dialog / modal goes here.
+													   <br>
+													   <br>
+													   <br>
+													   <p>more content</p>
+													   <br>
+													   <br>
+													   <br>	<a data-toggle="modal" href="#myModal2" class="btn btn-primary">Launch modal</a>
+									   
+												   </div>
+												   <div class="modal-footer">	<a href="#" data-dismiss="modal" class="btn">Close</a>
+										   <a href="#" class="btn btn-primary">Save changes</a>
+									   
+												   </div>
+											   </div>
+										   </div>
+									   </div>
+									   <div class="modal fade" id="myModal2">
+										   <div class="modal-dialog">
+											   <div class="modal-content">
+												   <div class="modal-header">
+													   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														   <h4 class="modal-title">Modal 2</h4>
+									   
+												   </div>
+												   <div class="container"></div>
+												   <div class="modal-body">Content for the dialog / modal goes here.
+													   <br>
+													   <br>
+													   <p>come content</p>
+													   <br>
+													   <br>
+													   <br>	<a data-toggle="modal" href="#myModal3" class="btn btn-primary">Launch modal</a>
+									   
+												   </div>
+												   <div class="modal-footer">	<a href="#" data-dismiss="modal" class="btn">Close</a>
+										   <a href="#" class="btn btn-primary">Save changes</a>
+									   
+												   </div>
+											   </div>
+										   </div>
+									   </div>
 									</div>
 									<div class="card-content">
 										<div class="card-body">
@@ -1436,31 +1500,31 @@
 	<!-- Modal end -->
 
 	<!-- BEGIN VENDOR JS-->
-	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<script src="../../app-assets/vendors/js/vendors.min.js"></script>
 	<!-- BEGIN VENDOR JS-->
 	<!-- BEGIN PAGE VENDOR JS-->
-	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<script src="../../app-assets/vendors/js/ui/prism.min.js"></script>
 	<!-- END PAGE VENDOR JS-->
 	<!-- BEGIN MODERN JS-->
-	<script src="../../../app-assets/js/core/app-menu.js"></script>
-	<script src="../../../app-assets/js/core/app.js"></script>
-	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
-	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
-	<script src="../../../assets/js/script-s.js"></script>
-	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
-	<script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
-	<script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+	<script src="../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../app-assets/js/core/app.js"></script>
+	<script src="../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../assets/js/script-s.js"></script>
+	<script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+	<script src="../../app-assets/js/scripts/jquery2.1.min.js"></script>
+	<script src="../../app-assets/js/scripts/dropzone.min.js"></script>
 
 	<!-- END MODERN JS-->
 	<!-- BEGIN PAGE LEVEL JS-->
-	<script src="../../../app-assets/js/scripts/tooltip/tooltip.js"></script>
-	<script src="../../../app-assets/vendors/js/animation/jquery.appear.js"></script>
-	<script src="../../../app-assets/js/scripts/animation/animation.js"></script>
-	<script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
-	<script src="../../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+	<script src="../../app-assets/js/scripts/tooltip/tooltip.js"></script>
+	<script src="../../app-assets/vendors/js/animation/jquery.appear.js"></script>
+	<script src="../../app-assets/js/scripts/animation/animation.js"></script>
+	<script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+	<script src="../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+	<script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+	<script src="../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
 
 	<script>
 		$(function() {
@@ -1503,6 +1567,7 @@
 		})
 
 	</script>
+
 
 	<!-- END PAGE LEVEL JS-->
 </body>
