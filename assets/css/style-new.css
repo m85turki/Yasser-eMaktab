@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fc-toolbar.fc-header-toolbar{
+	background-color: #7caa83;
+	padding:10px;
+	margin-bottom: 0px;
+	
+}
+.fc-row  thead tr th{
+	border:0;
+	
+}
+.fc-head .fc-row:first-child thead tr{
+	background-color:#dce8dc;
+	color:#359565;
+}
+.title{
+	background-color:white;
+}
+.event-date .fold{
+	position: relative!important;
+	top:auto!important;
+}
+.location-desc{
+	font-size:10px;
+}
+.appointment-summery{
+	background-color:#ffffff;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+}
+.event-date .fold {
+	padding: 15px!important;
+	height: 100%;
+	border-radius: 0px;
+	background-color:#7caa83!important;
+}
+.appointment-summery-header{
+	padding:5px;
+}
+.appointment-summery-header div{
+	padding:3px;
+}
+.fc .fc-day-number{
+    font-size: 16px;
+	padding-left:1em;
+	color:#333333;
+}
+.fc-event{
+	background-color: #5c9f76;
+	border:0;
+}
+.fc-event span{
+	font-size: 10px;
+}
+.event{
+	color:#5d9e74;
+}
+.fc-button {
+    border-radius: 2px !important;
+	color: #5C9F76!important;
+    background-color: #fff!important;
+	padding:5px!important;
+	border:1px solid #DCE8DC;
+}
+.fc-button:focus{
+	border-color:#EEEEEE!important; 
+}
+.fc-state-default{
+	box-shadow: none!important;
+}
+.fc-state-default:active{
+	border-color: #73c08e;
+}
+
+
+
