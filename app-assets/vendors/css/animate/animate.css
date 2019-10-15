@@ -3613,11 +3613,9 @@
   animation-duration: 3s;
 }
 
-@media (prefers-reduced-motion) {
-  .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

@@ -40,6 +40,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/dragula.min.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/extensions/todo.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/animate/animate.css">
 </head>
 
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
@@ -52,50 +53,63 @@
 				<div class="container d-flex justify-content-between">
 				<div class="logo"><img src="../../assets/img/logo.png"></div>
 				<ul class="upper-list">
-					<li><a href="#">EN</a></li>
-					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					
 					<li>
-						<div class="user-options">
-							<span>اسم الموظف</span>
-							<img src="../../assets/img/default-avatar.png">
-							<ul class="user-option-menu">
-								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
-								</li>
-								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
-								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
-								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
-								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
-								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
-								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
-								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
-							</ul>
+						<div class="dropdown">
+							<a class="upper-list-link button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								إسم الإدارة
+							</a>
+							<div class="dropdown-menu dropdown-header-menu-left fadeIn animated" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">الإدارة الأولى</a>
+								<a class="dropdown-item" href="#">الإدارة الثانية</a>
+								<a class="dropdown-item" href="#">الإدارة الثالثة</a>
+							</div>
 						</div>
 					</li>
+	
 					<li>
-						<div class="user-options">
-							<span>إسم الإدارة</span>
-							<ul class="user-option-menu">
-								<li><a href="#">الإدارة الأولى</a></li>
-								<li><a href="#">الإدارة الثانية</a></li>
-								<li><a href="#">الإدارة الثالثة</a></li>
-							</ul>
+						<div class="dropdown">
+							<a class="upper-list-link" href="#" role="button" id="dropdownMenuLink-b" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="../../assets/img/default-avatar.png" width="30">
+								<span>اسم الموظف</span>
+							</a>
+							<div class="dropdown-menu dropdown-header-menu-left fadeIn animated" aria-labelledby="dropdownMenuLink-b">
+								<a class="dropdown-item" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a>
+							</div>
 						</div>
 					</li>
-
+					
 					<li>
-						<div class="notifications">
-							<i class="fa fa-bell" aria-hidden="true"></i>
-							<span class="modules-notification hdr-noti-number">3</span>
-							<ul class="notifications-option-menu">
-								<li><a href="#">notification</a></li>
-								<li><a href="#">notification</a></li>
-								<li><a href="#">notification</a></li>
-								<li><a href="#">notification</a></li>
-								<li><a href="#">notification</a></li>
-							</ul>
+						<div class="dropdown">
+							<a class="upper-list-link" href="#" role="button" id="dropdownMenuLink-c" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-bell" aria-hidden="true"></i>
+								<span class="modules-notification hdr-noti-number">3</span>
+							</a>
+							<div class="dropdown-menu dropdown-header-menu-left fadeIn animated" aria-labelledby="dropdownMenuLink-c">
+									<a class="dropdown-item" href="#">notification</a>
+									<a class="dropdown-item" href="#">notification</a>
+									<a class="dropdown-item" href="#">notification</a>
+									<a class="dropdown-item" href="#">notification</a>
+									<a class="dropdown-item" href="#">notification</a>
+							</div>
 						</div>
 					</li>
-
+					
+					<li>
+						<a class="upper-list-link">
+							<i class="fa fa-comments-o" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a class="upper-list-link">EN</a>
+					</li>
 				</ul>
 				</div>
 			</div>
