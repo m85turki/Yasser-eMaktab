@@ -741,8 +741,8 @@ input:focus ~ .bg-primary
 .btn-primary:active
 {
     color: #fff !important; 
-    border-color: #535be2 !important;
-    background-color: #4951de !important;
+    border-color: #348F56 !important;
+    background-color: #348F56 !important;
 }
 .btn-primary.btn-glow
 {
