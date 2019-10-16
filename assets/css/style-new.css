@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+/*fonts*/
+@import "./fonts/fontawesome/css/all.css";
 
 .fc-toolbar.fc-header-toolbar{
 	background-color: #7caa83;
@@ -15,9 +17,7 @@
 	background-color:#dce8dc;
 	color:#359565;
 }
-.title{
-	background-color:white;
-}
+
 .event-date .fold{
 	position: relative!important;
 	top:auto!important;
@@ -25,9 +25,11 @@
 .location-desc{
 	font-size:10px;
 }
-.appointment-summery{
-	background-color:#ffffff;
+.appointment-box{
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+}
+.appointment-box:hover{
+	background-color:#e4e9e4;
 }
 .event-date .fold {
 	padding: 15px!important;
@@ -37,9 +39,12 @@
 }
 .appointment-summery-header{
 	padding:5px;
+	background-color: white;
+	flex: 1 1 auto;
+    width: 1%;
 }
-.appointment-summery-header div{
-	padding:3px;
+.appointment-summery-header:hover{
+	background-color: #eef3ed;
 }
 .fc .fc-day-number{
     font-size: 16px;
@@ -61,17 +66,92 @@
 	color: #5C9F76!important;
     background-color: #fff!important;
 	padding:5px!important;
-	border:1px solid #DCE8DC;
 }
-.fc-button:focus{
-	border-color:#EEEEEE!important; 
+.fc-button.fc-state-default:hover{
+	background-color:#f0f5ef!important;
+}
+.fc-button:hover{
+	color:#c2cdcf;
 }
 .fc-state-default{
 	box-shadow: none!important;
 }
-.fc-state-default:active{
-	border-color: #73c08e;
+.fc-state-active:focus,.fc-state-active:disabled{
+	background-color:#c2cdcf!important;
+
+}
+.fc-unthemed td.fc-today{
+	background-color:#eef3ed;
+}
+.fc-row thead tr th span{
+	font-size:12px;
+
+}
+.fc-row thead tr th{
+	margin-left:2px!important;
+}
+.details{
+	font-size:14px;
+	color:#333333;
+}
+.details div{
+	display: block;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.time{
+	font-size:12px;
+	color:#333333;
+	margin-top: 5px;
+}
+.time i{
+	color:#c3cdcf;
+	padding-left:2px;
+}
+.hall{
+	font-size:12px;
+	color:#333333;
+	margin-top: 5px;
+}
+.hall div{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;	
+}
+.hall i{
+	color:#c3cdcf;
+	padding-left: 2px;
+}
+.icons{
+	background-color:#EEF3ED;
+	padding:3px;
+}
+.icons i{
+	color:#7CAA83;
+	padding-right: 10px;
+	font-size:14px;
+	cursor: pointer;
+}
+.icons i:hover{
+	color:#537257;
+}
+.icons i:last-child{
+	padding-left:5px;
 }
 
 
+
+@media(max-width:768px) {
+	.fc-left .fc-button,.fc-right .fc-button{
+		padding:4px;
+		font-size:12px;
+	}
+	}
+	@media(max-width:576px) {
+	.fc-left .fc-button,.fc-right .fc-button{
+		padding:2px!important;
+		font-size:10px;
+	}
+	}
 
