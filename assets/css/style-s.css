@@ -237,7 +237,7 @@ body{
 	color: #252C53;
 	text-decoration: none;
 	transition: 0.3s;
-	padding: 15px 17px;
+	padding: 10px 17px;
 	font-size: 16px;
 }
 
@@ -1913,7 +1913,7 @@ div#friends {
 
 @media only screen and (max-width: 991px) {
 	.modules-link li a {
-		padding: 15px 10px;
+		padding: 10px 10px;
 	}
 }
 
@@ -2385,15 +2385,19 @@ a.upper-list-link:hover img{
 		max-width: 90%;
 	}
 	.modules-link li a {
-		padding: 15px 15px;
+		padding: 10px 15px;
 	}
 }
 
+/**/
+
+footer.page-footer {
+	background: #DBE0E3;
+	color: #252C53;
+}
 
 footer.page-footer .footer-copyright {
     overflow: hidden;
-    color: rgba(255,255,255,.6);
-    background-color: rgba(0,0,0,.2);
 }
 
 
