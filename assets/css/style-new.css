@@ -27,9 +27,10 @@
 }
 .appointment-box{
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	border:1px solid transparent;
 }
 .appointment-box:hover{
-	background-color:#e4e9e4;
+	border:1px solid #7caa83;
 }
 .event-date .fold {
 	padding: 15px!important;
@@ -43,9 +44,7 @@
 	flex: 1 1 auto;
     width: 1%;
 }
-.appointment-summery-header:hover{
-	background-color: #eef3ed;
-}
+
 .fc .fc-day-number{
     font-size: 16px;
 	padding-left:1em;
@@ -69,6 +68,9 @@
 }
 .fc-button.fc-state-default:hover{
 	background-color:#f0f5ef!important;
+}
+.fc-right .fc-button.fc-state-default{
+	margin-left: 5px;
 }
 .fc-button:hover{
 	color:#c2cdcf;
@@ -102,7 +104,7 @@
 }
 .time{
 	font-size:12px;
-	color:#333333;
+	color:#787878;
 	margin-top: 5px;
 }
 .time i{
@@ -139,7 +141,10 @@
 .icons i:last-child{
 	padding-left:5px;
 }
-
+.more{
+	padding:1px 10px;
+	background-color:#00844b;
+}
 
 
 @media(max-width:768px) {
@@ -153,5 +158,14 @@
 		padding:2px!important;
 		font-size:10px;
 	}
+		.fc-center h2{
+			font-size:13px !important;
+		}
+
 	}
+@media (max-width: 992px) {
+	.fc-center h2{
+	font-size:16px;
+	}
+}
 
