@@ -6,7 +6,6 @@
 ================================================================================
   */
 .fc {
-	padding: 15px;
 	background: #fff;
 	border-radius: 6px;
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
@@ -23,6 +22,11 @@
 	color: #fff;
 	border-color: #252e6b;
 	background-color: #252e6b;
+}
+
+.fc-toolbar h2 {
+    margin: 0;
+	color:white;
 }
 
 .fc-unthemed .fc-content,
