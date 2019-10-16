@@ -1,5 +1,5 @@
 body{
-	background: ;
+	background: url(../img/texture.png) repeat center center #FFFFFF !important;
 }
 /*header area*/
 
@@ -923,7 +923,7 @@ textarea.txt-area {
 }
 
 body {
-	padding-top: 110px;
+	padding-top: 138px;
 }
 
 .attached_total_btn {
@@ -2387,6 +2387,13 @@ a.upper-list-link:hover img{
 	.modules-link li a {
 		padding: 15px 15px;
 	}
+}
+
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.2);
 }
 
 
