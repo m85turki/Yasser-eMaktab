@@ -2404,6 +2404,9 @@ footer.page-footer .footer-copyright {
 .list-of-tasks{
 	
 }
+.list-of-tasks .card-task{
+	background: #fff;
+}
 .list-of-tasks .card-task .name-task{
 
 }
