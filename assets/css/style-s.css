@@ -1,3 +1,5 @@
+@import "./style-new.css";
+
 body{
 	background: url(../img/texture.png) repeat center center #FFFFFF !important;
 	padding-top: 124px;
@@ -2399,3 +2401,15 @@ footer.page-footer .footer-copyright {
 
 
 /* list of tasks */
+.list-of-tasks{
+	
+}
+.list-of-tasks .card-task .name-task{
+
+}
+.list-of-tasks .card-task{
+
+}
+.list-of-tasks .card-task{
+
+}
