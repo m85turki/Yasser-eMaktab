@@ -2381,7 +2381,7 @@ a.upper-list-link:hover img{
 
 @media (min-width: 1024px){
 	.container-fluid {
-		max-width: 90%;
+		max-width: 80%;
 	}
 	.modules-link li a {
 		padding: 10px 15px;
@@ -2402,17 +2402,125 @@ footer.page-footer .footer-copyright {
 
 /* list of tasks */
 .list-of-tasks{
-	
+	display: block;
 }
 .list-of-tasks .card-task{
 	background: #fff;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	border: 1px solid transparent;
+	padding: 10px 15px;
+	border-radius: .25rem;
+	color: #6b6f82;
+	margin-bottom: 20px;
 }
+
+	.list-of-tasks .card-task i{
+		color: #c2cdcf;
+		margin-left: 5px;
+	}
+
+.list-of-tasks .card-task:hover{
+	border: 1px solid #7caa83;
+}
+
 .list-of-tasks .card-task .name-task{
-
+	font-size: 15px;
 }
-.list-of-tasks .card-task{
 
+	.list-of-tasks .card-task .name-task::before, .list-of-tasks .card-task .name-task::after{
+		display: table;
+		clear: both;
+		content: "";
+	}
+
+
+	.list-of-tasks .card-task .name-task a{
+		font-size: 15px;
+		color: #6b6f82;
+
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		float: right;
+		max-width: 100%;
+	}
+	.list-of-tasks .card-task .name-task a:hover{
+		font-size: 15px;
+		color: #348F56;
+	}
+
+.list-of-tasks .card-task .meeting-task{
+	font-size: 15px;
+	margin-top: 5px;
+	paddign
 }
-.list-of-tasks .card-task{
 
+	.list-of-tasks .card-task .meeting-task::before, .list-of-tasks .card-task .meeting-task::after{
+		display: table;
+		clear: both;
+		content: "";
+	}
+.list-of-tasks .card-task .meeting-task a{
+	font-size: 15px;
+	background: #7CAA83;
+	border-radius: .25rem;
+	color: #FFFFFF;
+	padding: 0px 7px 2px 7px;
+
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	float: right;
+	max-width: 100%;
+}
+
+.list-of-tasks .card-task .subscribers-task{
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.list-of-tasks .card-task .date-time-task{
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.list-of-tasks .card-task .date-time-task span.space{
+	padding: 0px 5px;
+}
+
+.progress-bar-task{
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+	padding: 2px 1px;
+	background: rgba(219, 224, 227, 0.5);
+	border-radius: .25rem;
+}
+
+
+.progress-bar-task::after, .progress-bar-task::before{
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.progress-bar-task div{
+	float: right;
+	background: #348F56;
+	border-radius: .25rem;
+	height: 5px;
+}
+
+
+
+
+@media (min-width: 768px){
+.flex-width-auto{
+	position: relative;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	width: 1%;
+}
 }
