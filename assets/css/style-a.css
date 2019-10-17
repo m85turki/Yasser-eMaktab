@@ -7,7 +7,7 @@
   */
 .fc {
 	background: #fff;
-	border-radius: 6px;
+	border-radius: .25rem;
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
 	/*margin-bottom: 50px;*/
 }
@@ -239,9 +239,7 @@
 }
 
 .event-date .fold {
-	padding: 8px;
 	border-radius: 6px 0px 0px 0px;
-	width: 60px;
 	display: block;
 	position: absolute;
 	left: 0px;
@@ -257,7 +255,6 @@
 .event-date span.day {
 	font-size: 32px;
 	font-size: 2em;
-	line-height: 1.1;
 }
 
 .event-date span.month,

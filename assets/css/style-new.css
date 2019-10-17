@@ -18,28 +18,31 @@
 	color:#359565;
 }
 
-.event-date .fold{
-	position: relative!important;
-	top:auto!important;
-}
 .location-desc{
 	font-size:10px;
 }
 .appointment-box{
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
-	border:1px solid transparent;
+	border:1px solid #cce4cf;
+	border-radius: .25rem;
 }
 .appointment-box:hover{
 	border:1px solid #7caa83;
 }
+.event-date{
+	width:18%;
+}
 .event-date .fold {
-	padding: 15px!important;
 	height: 100%;
 	border-radius: 0px;
 	background-color:#7caa83!important;
+	position: relative!important;
+	top:auto!important;
+	vertical-align: middle;
+    padding-top: 10px;
 }
 .appointment-summery-header{
-	padding:5px;
+	padding:10px 10px;
 	background-color: white;
 	flex: 1 1 auto;
     width: 1%;
@@ -94,18 +97,21 @@
 }
 .details{
 	font-size:14px;
-	color:#333333;
 }
-.details div{
+.details a{
 	display: block;
 	text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+	color:#333333 !important;
+}
+.details a:hover{
+	color:#5f5e5e!important;
 }
 .time{
 	font-size:12px;
 	color:#787878;
-	margin-top: 5px;
+	margin-top: 8px;
 }
 .time i{
 	color:#c3cdcf;
@@ -127,7 +133,7 @@
 }
 .icons{
 	background-color:#EEF3ED;
-	padding:3px;
+	padding:6px 10px;
 }
 .icons i{
 	color:#7CAA83;
@@ -135,20 +141,64 @@
 	font-size:14px;
 	cursor: pointer;
 }
-.icons i:hover{
-	color:#537257;
+.icons a:hover{
+	color:#496b4e;
 }
-.icons i:last-child{
-	padding-left:5px;
+
+.icons2{
+	background-color:#EEF3ED;
+	padding:6px 10px;
 }
+.icons2 i{
+	padding-left: 2px;
+}
+
+
 .more{
 	padding:1px 10px;
 	background-color:#00844b;
+	cursor: pointer;
 }
 .custom-sub-nav-tabs li a {
     padding: 0px 5px !important;
 }
+.appointment-text{
+	flex: 1 1 auto;
+    width: 1%;
+}
+.acceptable{
+	color:#02834a;
+	cursor: pointer;
+	padding-left:6px;
+}
 
+.acceptable:hover{
+	color:#05ab5f;
+}
+.decline{
+	color:#c12b2a;
+	cursor: pointer;
+}
+.decline:hover{
+	color:#f93934;
+}
+.appointment-text i{
+	color:#c2cdcf;
+	padding-left:5px;
+}
+.nav-tabs{
+	border-bottom: 0;
+}
+.custom-sub-nav-tabs.nav-tabs>li>a.active{
+	color: #262B56;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7cac84;
+	}
+.custom-sub-nav-tabs.nav-tabs>li a{
+	color: #262B56;	
+	border-bottom: 3px solid transparent;
+}
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
