@@ -1960,9 +1960,6 @@ div#friends {
 		padding-top: 10px !important;
 	}
 
-	body {
-		padding-top: 35px;
-	}
 
 	.upper-list li {
 		font-size: 12px;
@@ -2453,7 +2450,6 @@ footer.page-footer .footer-copyright {
 .list-of-tasks .card-task .meeting-task{
 	font-size: 15px;
 	margin-top: 5px;
-	paddign
 }
 
 	.list-of-tasks .card-task .meeting-task::before, .list-of-tasks .card-task .meeting-task::after{
