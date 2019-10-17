@@ -39,7 +39,7 @@
 	position: relative!important;
 	top:auto!important;
 	vertical-align: middle;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .appointment-summery-header{
 	padding:10px 10px;
@@ -74,6 +74,7 @@
 }
 .fc-right .fc-button.fc-state-default{
 	margin-left: 5px;
+	border-radius: .25rem!important;
 }
 .fc-button:hover{
 	color:#c2cdcf;
@@ -106,12 +107,19 @@
 	color:#333333 !important;
 }
 .details a:hover{
-	color:#5f5e5e!important;
+	color:#348F56!important;
 }
 .time{
 	font-size:12px;
 	color:#787878;
 	margin-top: 8px;
+}
+.time2{
+	font-size:12px;
+	color:#787878;
+	margin-top: 8px;
+	flex: 1 1 auto;
+    width: 1%;	
 }
 .time i{
 	color:#c3cdcf;
@@ -131,9 +139,30 @@
 	color:#c3cdcf;
 	padding-left: 2px;
 }
+.hall2{
+	font-size:12px;
+	margin-top: 5px;
+	color:#333333;
+	flex: 1 1 auto;
+    width: 1%;
+}
+.hall2 div{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;	
+}
+.details2{
+	display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #333333 !important;
+	flex: 1 1 auto;
+    width: 1%;
+}
 .icons{
 	background-color:#EEF3ED;
-	padding:6px 10px;
+	padding:1px 10px;
 }
 .icons i{
 	color:#7CAA83;
@@ -147,7 +176,7 @@
 
 .icons2{
 	background-color:#EEF3ED;
-	padding:6px 10px;
+	padding:1px 10px;
 }
 .icons2 i{
 	padding-left: 2px;
@@ -162,10 +191,7 @@
 .custom-sub-nav-tabs li a {
     padding: 0px 5px !important;
 }
-.appointment-text{
-	flex: 1 1 auto;
-    width: 1%;
-}
+
 .acceptable{
 	color:#02834a;
 	cursor: pointer;
@@ -186,6 +212,10 @@
 	color:#c2cdcf;
 	padding-left:5px;
 }
+.appointment-text:hover{
+	color:#348F56!important;
+	
+}
 .nav-tabs{
 	border-bottom: 0;
 }
@@ -199,11 +229,28 @@
 	color: #262B56;	
 	border-bottom: 3px solid transparent;
 }
+
+.more:hover{
+	border-color: #2a2a2a !important;
+    background-color: #f4f8f9 !important;
+	color:#2a2a2a!important;
+}
+.second-details{
+	padding-top:5px;
+}
+.name{
+	flex: 1 1 auto;
+    width: 1%;
+	font-size:12px;
+}
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
 		font-size:12px;
 	}
+		.details2,.hall2,.name,.time{
+			width: auto!important;
+		}
 	}
 	@media(max-width:576px) {
 	.fc-left .fc-button,.fc-right .fc-button{
@@ -212,6 +259,10 @@
 	}
 		.fc-center h2{
 			font-size:13px !important;
+		}
+
+		.details2,.hall2,.name,.time2{
+			width: auto!important;
 		}
 
 	}

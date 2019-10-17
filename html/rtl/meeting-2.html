@@ -39,8 +39,7 @@
 	<!-- END Custom CSS-->
 </head>
 
-<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
-	data-col="2-columns">
+<body>
 
 	<!-- fixed-top-->
 	<div class="header-area">
@@ -172,37 +171,16 @@
 		<div class="container">
 			<div class="pageContent">
 				<div class="contentFilters">
-					<div class="lowerFilters d-flex">
-						<h5 class=" mb-0">الإجتماعات</h5>
-						<!-- <label class="checkboxC" for="checkAll">
-							<input name="cards" id="checkAll" type="checkbox" value="test" /> تحديد الكل
-						</label> -->
-						<div class="ml-auto">
-							<button class="btn  no-bg-btn filtration_btn"><i class="fa fa-filter" aria-hidden="true"></i> تصفية</button>
-							<button class="btn  no-bg-btn sorting_btn"><i class="fa fa-sort" aria-hidden="true"></i> ترتيب حسب</button>
+                  <div class="lowerFilters">
+						<h3 class="pageTitle pull-right mt-1">الإجتماعات</h3>
+						<button class="btn no-bg-btn filtration_btn"><i class="fa fa-filter" aria-hidden="true"></i> تصفية</button>
+						<button class="btn no-bg-btn sorting_btn"><i class="fa fa-sort" aria-hidden="true"></i> ترتيب حسب</button>
 							<div class="btn-group">
 								<button class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> انشاء اجتماع</button>
 							</div>
-						</div>
+
 					</div>
 				</div>
-				<ul class="nav nav-tabs custom-sub-nav-tabs mb-1" role="tablist">
-                            <li role="presentation">
-                                <a href="#sub-tab-1" aria-controls="sub-tab-1" role="tab" data-toggle="tab" class="active">
-                                    الإجتماعات القادمة
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#sub-tab-2" aria-controls="sub-tab-2" role="tab" data-toggle="tab">
-                                   الإجتماعات الفائتة
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#sub-tab-3" aria-controls="sub-tab-3" role="tab" data-toggle="tab">
-                                    الإجتماعات الملغية
-                                </a>
-                            </li>
-                        </ul>
 
 				<div class="card card-padd filtration_container">
 					<div class="row">
@@ -301,212 +279,237 @@
 						</div>
 					</div>
 				</div>
+								<ul class="nav nav-tabs custom-sub-nav-tabs mb-1" role="tablist">
+                            <li role="presentation">
+                                <a href="#sub-tab-1" aria-controls="sub-tab-1" role="tab" data-toggle="tab" class="active">
+                                    الإجتماعات القادمة
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sub-tab-2" aria-controls="sub-tab-2" role="tab" data-toggle="tab">
+                                   الإجتماعات الفائتة
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sub-tab-3" aria-controls="sub-tab-3" role="tab" data-toggle="tab">
+                                    الإجتماعات الملغية
+                                </a>
+                            </li>
+                        </ul>
 				<div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="sub-tab-1">
 							 <div class="appointment-box mb-1">
 										<div class="appointment-summery d-flex">
 											<span class="event-date">
-												<span class="fold bg-success">
-													<span class="day">29</span>
-													<span class="month">يونيو</span>
-												</span>
-
+											<span class="fold bg-success">
+												<span class="day">17</span>
+												<span class="month">10/19</span>
 											</span>
+
+										</span>
 										<div class="appointment-summery-header details">
-											<div class="d-flex">
-												<div class="appointment-text">مناقشة تجربة الموقع الجديد</div>
-												<div class="appointment-text">
-													<i class="fas fa-map-marker-alt"></i>
-													المكان:											
-												قاعة المجلس الرقمي
-												</div>
-												<div class="ml-auto px-2 acceptable">
-												<i class="fas fa-check"></i>
-												</div>
+											<div class="d-flex flex-md-row flex-column first-details">
+												<a class="details2">مناقشة تجربة الموقع الجديد</a>	
+												<div class="d-flex hall2">
+											<div class="pr-1">
+											<i class="fas fa-users"></i>
+												5
 											</div>
-											<div class="d-flex pt-1">
-											   <div class="appointment-text">
+											<div>
+												<i class="fas fa-map-marker-alt"></i>
+											قاعة الرياض للمؤتمرات
+											</div>
+
+										</div>
+												
+											</div>
+											<div class="d-flex flex-md-row flex-column second-details">
+											   <div class="name">
 												   <i class="fas fa-user"></i>
 												   محمد العبدالله
 
 															</div>
-												<div class="appointment-text">
-													<i class="fas fa-users"></i>
-													المدعوون:
-													5 أشخاص
+											<div class="time2">
+												<i class="fas fa-clock"></i>
+												5 مساء إلى 6 مساء
+												</div>
 
-															</div>
-												<div class="ml-auto px-2 decline">
-												<i class="fas fa-times"></i>
-													</div>
 											</div> 
 										</div>
 									  </div>
 
 									<div class="icons d-flex">
 										<div class="ml-auto">
-											<a href="#"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i></a>
-											<a href="#"><i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i></a>
-											<a href="#"><i class="far fa-handshake" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="عقد"></i></a>
 											<a href="#"><i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تعديل"></i></a>
-											<a href="#"><i class="fas fa-times" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إلغاء"></i></a>
+											<a href="#"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="حذف"></i></a>
+											<a href="#"><i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i></a>
+											<a href="#"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i></a>
+											<a href="#"><i class="fas fa-envelope" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إرسال رسالة"></i></a>
+											<a href="#"><i class="fas fa-paperclip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إرفاق"></i></a>
 										</div>
 										</div>
 
 								</div>
-							 <div class="appointment-box mb-1">
-									<div class="appointment-summery d-flex">
-										<span class="event-date">
+							<div class="appointment-box mb-1">
+										<div class="appointment-summery d-flex">
+											<span class="event-date">
 											<span class="fold bg-success">
-												<span class="day">29</span>
-												<span class="month">يونيو</span>
+												<span class="day">17</span>
+												<span class="month">10/19</span>
 											</span>
 
 										</span>
-									<div class="appointment-summery-header details">
-										<div class="d-flex">
-											<div class="appointment-text">مناقشة تجربة الموقع الجديد</div>
-											<div class="appointment-text">
-												<i class="fas fa-map-marker-alt"></i>
-												المكان:											
-											قاعة المجلس الرقمي
-											</div>
-											<div class="ml-auto px-2 acceptable">
-											<i class="fas fa-check"></i>
-											</div>
-										</div>
-									   	<div class="d-flex pt-1">
-										   <div class="appointment-text">
-											   <i class="fas fa-user"></i>
-											   محمد العبدالله
-
-														</div>
-										<div class="appointment-text">
+										<div class="appointment-summery-header details">
+											<div class="d-flex flex-md-row flex-column first-details">
+												<a class="details2">مناقشة تجربة الموقع الجديد</a>	
+												<div class="d-flex hall2">
+											<div class="pr-1">
 											<i class="fas fa-users"></i>
-											المدعوون:
-											5 أشخاص
+												<span>5</span>
+											</div>
+											<div>
+												<i class="fas fa-map-marker-alt"></i>
+											قاعة الرياض للمؤتمرات
+											</div>
 
-													</div>
-											<div class="ml-auto px-2 decline">
-											<i class="fas fa-times"></i>
+										</div>
+												
+											</div>
+											<div class="d-flex flex-md-row flex-column second-details">
+											   <div class="name">
+												   <i class="fas fa-user"></i>
+												   محمد العبدالله
+
+															</div>
+											<div class="time2">
+												<i class="fas fa-clock"></i>
+												5 مساء إلى 6 مساء
 												</div>
-										</div> 
-									</div>
-                                  </div>
 
-								<div class="icons d-flex">
+											</div> 
+										</div>
+									  </div>
+
+									<div class="icons2 d-flex">
 									<div class="ml-auto">
-										<a href="#"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i></a>
-										<a href="#"><i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i></a>
-										<a href="#"><i class="far fa-handshake" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="عقد"></i></a>
-										<a href="#"><i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تعديل"></i></a>
-										<a href="#"><i class="fas fa-times" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إلغاء"></i></a>
+                                     <a href="#" class="acceptable">
+										<i class="fas fa-check"></i>
+										قبول
+									</a>
+								     <a href="#" class="decline">
+										<i class="fas fa-times"></i>
+										 رفض
+										</a>
 									</div>
 									</div>
 
-							</div>
-							 <div class="appointment-box mb-1">
-									<div class="appointment-summery d-flex">
-										<span class="event-date">
+								</div>
+							<div class="appointment-box mb-1">
+										<div class="appointment-summery d-flex">
+											<span class="event-date">
 											<span class="fold bg-success">
-												<span class="day">29</span>
-												<span class="month">يونيو</span>
+												<span class="day">17</span>
+												<span class="month">10/19</span>
 											</span>
 
 										</span>
-									<div class="appointment-summery-header details">
-										<div class="d-flex">
-											<div class="appointment-text">مناقشة تجربة الموقع الجديد</div>
-											<div class="appointment-text">
+										<div class="appointment-summery-header details">
+											<div class="d-flex flex-md-row flex-column first-details">
+												<a class="details2">مناقشة تجربة الموقع الجديد</a>	
+												<div class="d-flex hall2">
+											<div class="pr-1">
+											<i class="fas fa-users"></i>
+												5
+											</div>
+											<div>
 												<i class="fas fa-map-marker-alt"></i>
-												المكان:											
-											قاعة المجلس الرقمي
+											قاعة الرياض للمؤتمرات
 											</div>
-											<div class="ml-auto px-2 acceptable">
-											<i class="fas fa-check"></i>
-											</div>
+
 										</div>
-									   	<div class="d-flex pt-1">
-										   <div class="appointment-text">
-											   <i class="fas fa-user"></i>
-											   محمد العبدالله
+												
+											</div>
+											<div class="d-flex flex-md-row flex-column second-details">
+											   <div class="name">
+												   <i class="fas fa-user"></i>
+												   محمد العبدالله
 
-														</div>
-											<div class="appointment-text">
-												<i class="fas fa-users"></i>
-												المدعوون:
-												5 أشخاص
-
-														</div>
-											<div class="ml-auto px-2 decline">
-											<i class="fas fa-times"></i>
+															</div>
+											<div class="time2">
+												<i class="fas fa-clock"></i>
+												5 مساء إلى 6 مساء
 												</div>
-										</div> 
-									</div>
-                                  </div>
 
-								<div class="icons d-flex">
-									<div class="ml-auto">
-										<i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i>
-										<i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i>
-										<i class="far fa-handshake" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="عقد"></i>
-										<i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تعديل"></i>
-										<i class="fas fa-times" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إلغاء"></i>
-									</div>
-									</div>
+											</div> 
+										</div>
+									  </div>
 
-							</div>
-							 <div class="appointment-box mb-1">
-									<div class="appointment-summery d-flex">
-										<span class="event-date">
+									<div class="icons d-flex">
+										<div class="ml-auto">
+											<a href="#"><i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تعديل"></i></a>
+											<a href="#"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="حذف"></i></a>
+											<a href="#"><i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i></a>
+											<a href="#"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i></a>
+											<a href="#"><i class="fas fa-envelope" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إرسال رسالة"></i></a>
+											<a href="#"><i class="fas fa-paperclip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إرفاق"></i></a>
+										</div>
+										</div>
+
+								</div>
+							<div class="appointment-box mb-1">
+										<div class="appointment-summery d-flex">
+											<span class="event-date">
 											<span class="fold bg-success">
-												<span class="day">29</span>
-												<span class="month">يونيو</span>
+												<span class="day">17</span>
+												<span class="month">10/19</span>
 											</span>
 
 										</span>
-									<div class="appointment-summery-header details">
-										<div class="d-flex">
-											<div class="appointment-text">مناقشة تجربة الموقع الجديد</div>
-											<div class="appointment-text">
+										<div class="appointment-summery-header details">
+											<div class="d-flex flex-md-row flex-column first-details">
+												<a class="details2">مناقشة تجربة الموقع الجديد</a>	
+												<div class="d-flex hall2">
+											<div class="pr-1">
+											<i class="fas fa-users"></i>
+												<span>5</span>
+											</div>
+											<div>
 												<i class="fas fa-map-marker-alt"></i>
-												المكان:											
-											قاعة المجلس الرقمي
+											قاعة الرياض للمؤتمرات
 											</div>
-											<div class="ml-auto px-2 acceptable">
-											<i class="fas fa-check"></i>
-											</div>
+
 										</div>
-									   	<div class="d-flex pt-1">
-										   <div class="appointment-text">
-											   <i class="fas fa-user"></i>
-											   محمد العبدالله
+												
+											</div>
+											<div class="d-flex flex-md-row flex-column second-details">
+											   <div class="name">
+												   <i class="fas fa-user"></i>
+												   محمد العبدالله
 
-														</div>
-											<div class="appointment-text">
-												<i class="fas fa-users"></i>
-												المدعوون:
-												5 أشخاص
-
-														</div>
-											<div class="ml-auto px-2 decline">
-											<i class="fas fa-times"></i>
+															</div>
+											<div class="time2">
+												<i class="fas fa-clock"></i>
+												5 مساء إلى 6 مساء
 												</div>
-										</div> 
-									</div>
-                                  </div>
 
-								<div class="icons d-flex">
+											</div> 
+										</div>
+									  </div>
+
+									<div class="icons2 d-flex">
 									<div class="ml-auto">
-										<i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تفاصيل"></i>
-										<i class="far fa-clone" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="نسخ"></i>
-										<i class="far fa-handshake" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="عقد"></i>
-										<i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="تعديل"></i>
-										<i class="fas fa-times" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="إلغاء"></i>
+                                     <a href="#" class="acceptable">
+										<i class="fas fa-check"></i>
+										قبول
+									</a>
+								     <a href="#" class="decline">
+										<i class="fas fa-times"></i>
+										 رفض
+										</a>
 									</div>
 									</div>
 
-							</div>
+								</div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="sub-tab-2">
 							kfffffffffffffff
