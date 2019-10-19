@@ -25,12 +25,13 @@
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
 	border:1px solid #cce4cf;
 	border-radius: .25rem;
+    margin-bottom: 20px;
 }
 .appointment-box:hover{
 	border:1px solid #7caa83;
 }
 .event-date{
-	width:18%;
+	width:20%;
 }
 .event-date .fold {
 	height: 100%;
@@ -117,10 +118,37 @@
 .time2{
 	font-size:12px;
 	color:#787878;
-	margin-top: 8px;
-	flex: 1 1 auto;
-    width: 1%;	
 }
+
+.third-details{
+	margin-top: 8px;
+}
+.third-details .time2{
+	display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	font-size: 12px;
+    color: #787878;
+}
+.hall-user{
+	flex: 1 1 auto;
+    width: 1%;
+}
+.hall2{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.number{
+	 white-space: nowrap;
+}
+.number i{
+	color: #c3cdcf;
+    padding-left: 2px;
+}
+
+
 .time i{
 	color:#c3cdcf;
 	padding-left:2px;
@@ -141,10 +169,7 @@
 }
 .hall2{
 	font-size:12px;
-	margin-top: 5px;
 	color:#333333;
-	flex: 1 1 auto;
-    width: 1%;
 }
 .hall2 div{
 	text-overflow: ellipsis;
@@ -157,9 +182,8 @@
     overflow: hidden;
     white-space: nowrap;
     color: #333333 !important;
-	flex: 1 1 auto;
-    width: 1%;
 }
+
 .icons{
 	background-color:#EEF3ED;
 	padding:1px 10px;
@@ -237,20 +261,24 @@
 }
 .second-details{
 	padding-top:5px;
+
 }
 .name{
-	flex: 1 1 auto;
-    width: 1%;
 	font-size:12px;
+	display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.custom-sub-nav-tabs.nav-tabs li{
+	padding:0px 10px;
 }
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
 		font-size:12px;
 	}
-		.details2,.hall2,.name,.time{
-			width: auto!important;
-		}
+
 	}
 	@media(max-width:576px) {
 	.fc-left .fc-button,.fc-right .fc-button{
@@ -261,9 +289,6 @@
 			font-size:13px !important;
 		}
 
-		.details2,.hall2,.name,.time2{
-			width: auto!important;
-		}
 
 	}
 @media (max-width: 992px) {
