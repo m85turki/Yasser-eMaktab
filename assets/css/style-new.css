@@ -276,6 +276,7 @@
 .custom-sub-nav-tabs.nav-tabs li{
 	padding:0px 10px;
 }
+
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
