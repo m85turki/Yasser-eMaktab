@@ -238,10 +238,8 @@
 
 .event-date .fold {
 	border-radius: 6px 0px 0px 0px;
-	display: block;
 	position: absolute;
-	left: 0px;
-	top: -4px;
+	vertical-align: middle;
 }
 
 

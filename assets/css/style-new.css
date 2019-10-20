@@ -32,13 +32,12 @@
 }
 .event-date{
 	min-width:25%;
+	background-color:#7caa83!important;
 }
 .event-date .fold {
 	height: 100%;
 	border-radius: 0px;
-	background-color:#7caa83!important;
 	position: relative!important;
-	top:auto!important;
 	vertical-align: middle;
     padding-top: 5px;
 }
