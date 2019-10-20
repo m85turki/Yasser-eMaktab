@@ -191,13 +191,13 @@
 	background-color:#EEF3ED;
 	padding:1px 10px;
 }
-.icons i{
+.icons .type1 i{
 	color:#7CAA83;
 	padding-right: 10px;
 	font-size:14px;
 	cursor: pointer;
 }
-.icons a:hover{
+.icons .type1 a:hover{
 	color:#496b4e;
 }
 
@@ -205,7 +205,7 @@
 	background-color:#EEF3ED;
 	padding:1px 10px;
 }
-.icons2 i{
+.acceptable  i,.decline i{
 	padding-left: 3px;
 }
 
@@ -220,21 +220,24 @@
 }
 
 .acceptable{
-	color:#02834a;
+	color:#02834a!important;
 	cursor: pointer;
-	padding-left:6px;
+	padding-right: 10px;
 }
 
 .acceptable:hover{
-	color:#05ab5f;
+	color:#05ab5f !important;
 }
 .decline{
-	color:#c12b2a;
+	color:#c12b2a !important;
 	cursor: pointer;
+	padding-right: 10px;
 }
 .decline:hover{
-	color:#f93934;
+	color:#f93934 !important;
 }
+
+
 .appointment-text i{
 	color:#c2cdcf;
 	padding-left:5px;
