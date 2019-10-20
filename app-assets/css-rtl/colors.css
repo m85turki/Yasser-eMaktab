@@ -1926,13 +1926,57 @@ input:focus ~ .bg-success
     -webkit-box-shadow: 0 1px 20px 1px rgba(40, 208, 148, .6);
             box-shadow: 0 1px 20px 1px rgba(40, 208, 148, .6);
 }
-
-.btn-outline-success
-{
-    color: #28d094; 
-    border-color: #28d094;
-    background-color: transparent;
+.pin{
+	border-radius: 50%;
+    background: #7CAA83!important;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px;
+    display: inline-block;
+	line-height: 1.8rem;
 }
+.pin i
+{
+    color: #fff; 
+    border-color: #7CAA83;
+    background-color: transparent;
+	font-size: 12px;
+}
+.trash{
+	border-radius: 50%;
+    background: #cc0000!important;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px;
+    display: inline-block;
+	line-height: 1.8rem;
+}
+.trash i{
+	font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+}
+.warning{
+	border-radius: 50%;
+    background: #ff9149!important;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px;
+    display: inline-block;
+    line-height: 1.7rem;
+}
+.warning i{
+	font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+}
+
 .btn-outline-success:hover
 {
     color: #fff !important; 

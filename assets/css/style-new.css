@@ -69,14 +69,14 @@
     background-color: #fff!important;
 	padding:5px!important;
 }
-.fc-button.fc-state-default:hover{
+.fc-button:hover{
 	background-color:#f0f5ef!important;
 }
-.fc-right .fc-button.fc-state-default{
+.fc-right .fc-button{
 	margin-left: 5px;
 	border-radius: .25rem!important;
 }
-.fc-left .fc-button.fc-state-default{
+.fc-left .fc-button{
 	border-radius: .25rem!important;
 } 
 .fc-button:hover{
@@ -191,13 +191,13 @@
 	background-color:#EEF3ED;
 	padding:1px 10px;
 }
-.icons .type1 i{
+.type1 i{
 	color:#7CAA83;
 	padding-right: 10px;
 	font-size:14px;
 	cursor: pointer;
 }
-.icons .type1 a:hover{
+.type1 a:hover{
 	color:#496b4e;
 }
 
