@@ -329,7 +329,7 @@ body{
 
 .pageContent {
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .pageTitle {
@@ -354,7 +354,7 @@ body{
 }
 
 .contentFilters {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .upperFilters {
@@ -1933,7 +1933,7 @@ div#friends {
 		position: fixed;
 		z-index: 9;
 		right: -100%;
-		top: 85px;
+		top: 70px;
 		width: 100%;
 		margin: 0;
 	}
@@ -1955,12 +1955,6 @@ div#friends {
 	.openMobileMenu {
 		height: calc(100% - 45px);
 	}
-
-	.header-area {
-		padding-bottom: 10px;
-		padding-top: 10px !important;
-	}
-
 
 	.upper-list li {
 		font-size: 12px;
