@@ -2429,16 +2429,16 @@ footer.page-footer .footer-copyright {
 	margin-bottom: 20px;
 }
 
-	.list-of-tasks .card-task i{
+	.list-of-tasks .card-task i,.list-of-tasks .card-commite i{
 		color: #c2cdcf;
 		margin-left: 5px;
 	}
 
-.list-of-tasks .card-task:hover{
+.list-of-tasks .card-task:hover,.list-of-tasks .card-all:hover{
 	border: 1px solid #7caa83;
 }
 
-.list-of-tasks .card-task .name-task{
+.list-of-tasks .card-task .name-task,.list-of-tasks .card-commite .name-task{
 	font-size: 15px;
 }
 
@@ -2449,10 +2449,9 @@ footer.page-footer .footer-copyright {
 	}
 
 
-	.list-of-tasks .card-task .name-task a{
+	.list-of-tasks .card-task .name-task a,.list-of-tasks .card-commite .name-task a{
 		font-size: 15px;
 		color: #6b6f82;
-
 		display: block;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -2460,7 +2459,7 @@ footer.page-footer .footer-copyright {
 		float: right;
 		max-width: 100%;
 	}
-	.list-of-tasks .card-task .name-task a:hover{
+	.list-of-tasks .card-task .name-task a:hover,.list-of-tasks .card-commite .name-task a:hover{
 		font-size: 15px;
 		color: #348F56;
 	}

@@ -276,7 +276,17 @@
 .custom-sub-nav-tabs.nav-tabs li{
 	padding:0px 10px;
 }
-
+.card-all{
+	background: #fff;
+    box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #6b6f82;
+    margin-bottom: 20px;
+}
+.card-commite{
+	padding: 10px 15px;
+}
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
