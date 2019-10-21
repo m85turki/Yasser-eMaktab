@@ -202,9 +202,7 @@
 	background-color:#00844b;
 	cursor: pointer;
 }
-.custom-sub-nav-tabs li a {
-    padding: 0px 5px !important;
-}
+
 
 .icons .acceptable{
 	color:#02834a!important;
@@ -265,7 +263,7 @@
     font-weight: 600;
 }
 .custom-sub-nav-tabs.nav-tabs li{
-	padding:0px 10px;
+	padding: 5px 10px;
 }
 .card-all{
 	background: #fff;
