@@ -22,24 +22,25 @@
 	font-size:10px;
 }
 .appointment-box{
-	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) ;
 	border:1px solid #cce4cf;
 	border-radius: .25rem;
     margin-bottom: 20px;
 }
 .appointment-box:hover{
 	border:1px solid #7caa83;
+	border-radius: .25rem;
 }
 .event-date{
-	min-width:100px;
+	width:80px;
 	background-color:#7caa83!important;
 }
 .event-date .fold {
 	height: 100%;
-	border-radius: 0px;
 	position: relative!important;
 	vertical-align: middle;
-    padding-top: 10px;
+    padding-top: 25px;
+	padding-bottom: 25px;
 }
 .appointment-summery-header{
 	padding:10px 10px;
@@ -117,10 +118,7 @@
 	color:#787878;
 	margin-top: 8px;
 }
-.time2{
-	font-size:12px;
-	color:#787878;
-}
+
 
 .third-details{
 	margin-top: 8px;
@@ -149,7 +147,6 @@
 .number{
 	 white-space: nowrap;
 	max-width: 10%;
-	overflow: hidden;
 }
 .number i{
 	color: #c3cdcf;
@@ -197,13 +194,13 @@
 	background-color:#EEF3ED;
 	padding:1px 10px;
 }
-.type1 i{
+.icons a{
 	color:#7CAA83;
 	padding-right: 10px;
 	font-size:14px;
 	cursor: pointer;
 }
-.type1 a:hover{
+.icons a:hover{
 	color:#496b4e;
 }
 
@@ -212,7 +209,7 @@
 	padding:1px 10px;
 }
 .acceptable  i,.decline i{
-	padding-left: 3px;
+	margin-left: 5px;
 }
 
 
@@ -225,21 +222,21 @@
     padding: 0px 5px !important;
 }
 
-.acceptable{
+.icons .acceptable{
 	color:#02834a!important;
 	cursor: pointer;
 	padding-right: 10px;
 }
 
-.acceptable:hover{
+.icons .acceptable:hover{
 	color:#05ab5f !important;
 }
-.decline{
+.icons .decline{
 	color:#c12b2a !important;
 	cursor: pointer;
 	padding-right: 10px;
 }
-.decline:hover{
+.icons .decline:hover{
 	color:#f93934 !important;
 }
 
@@ -298,10 +295,24 @@
 .card-commite{
 	padding: 10px 15px;
 }
+.number i,.hall2 i,.time2 i{
+	margin-left: 5px;
+}
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:4px;
 		font-size:12px;
+	}
+		.hall-user{
+			width: auto;
+		}
+
+	.number{
+		max-width: 100%;
+		
+	}
+	.third-details .time2{
+		max-width: 100%;
 	}
 
 	}
@@ -313,9 +324,20 @@
 		.fc-center h2{
 			font-size:13px !important;
 		}
-
-
+		.number{
+			max-width: 100%;
+		}
+		.third-details .time2{
+			max-width: 100%;
 	}
+		.hall-user{
+			width: auto;
+		}
+
+				}
+
+
+
 @media (max-width: 992px) {
 	.fc-center h2{
 	font-size:16px;
