@@ -647,11 +647,6 @@ textarea.txt-area {
 	outline: none;
 }
 
-
-
-
-
-
 .single_checkBox input[type=checkbox] + label {
 	display: block;
 
@@ -659,11 +654,9 @@ textarea.txt-area {
 
 }
 
-
-
 .single_checkBox input[type=checkbox] + label:before {
 	content: "\2714";
-	border: 2px solid #c9d8e6;
+	border: 2px solid rgba(124, 170, 131, 0.50);;
 	border-radius: 10px;
 	border-radius: 3px;
 	display: inline-block;
@@ -675,6 +668,7 @@ textarea.txt-area {
 	font-size: 30px;
 	font-size: 12px;
 	text-align: center;
+	
 }
 
 .single_checkBox input[type=checkbox] + label:active:before {

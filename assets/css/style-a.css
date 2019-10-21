@@ -271,9 +271,9 @@
 
 /* Halls */
 .halls-view .card {
-	background: #fafafa;
-	border: 1px solid #ccc;
-	border-bottom: 3px solid #ccc;
+	background: transparent;
+	border: 1px solid transparent;
+	border-bottom: 3px solid transparent;
 	margin-bottom: 1.25rem;
 }
 
@@ -291,8 +291,8 @@
 }
 
 .panel-white {
-	background: #fff;
-	border: 1px solid #eee;
+	background: transparent;
+	border: 1px solid transparent;
 	padding: 15px;
 	border-radius: .25rem;
 	min-height: 190px;
@@ -346,7 +346,7 @@
 }
 
 .bg-gradient-x-info {
-	background: #607d8b;
+	background: #7CAA83;
 }
 
 .bg-gradient-x-info .small-title {
@@ -367,13 +367,13 @@
 }
 
 .custom-card-form {
-	background: #fafafa;
-	border: 1px solid #ccc;
-	border-bottom: 3px solid #ccc;
+	background: #FFFFFF;
+	border: 1px solid transparent;
+	border-bottom: 3px solid transparent;
 }
 
 .custom-card-form .card-header {
-	background: #fafafa;
+	background: transparent;
 }
 
 .picker__list-item {
@@ -1011,4 +1011,80 @@ margin-left: 5px;
 
 .table.table-striped-sub .btn-sm, .table.table-striped-sub .btn-group-sm > .btn {
     padding: .5rem 0.5rem !important;
+}
+
+/* Secondary */
+
+.btn-secondary{
+    color: #fff;
+    border-color: #709976; 
+    background-color: #7CAA83;
+}
+
+.btn-secondary:hover{
+    color: #fff;
+    border-color: #678d6d; 
+    background-color: #6c9472;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus{
+    -webkit-box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5);
+            box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5);
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled{
+    color: #fff;
+    border-color: #849e88; 
+    background-color: #96ad99;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle{
+    color: #fff;
+    border-color: #709976; 
+    background-color: #7CAA83;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus
+{
+    -webkit-box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5);
+            box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5);
+}
+
+h4 i {
+	padding-left: .75rem !important;
+}
+
+.form-control {
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.25);
+}
+
+.form-control:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.50);
+	border: 1px solid #7CAA83;
+}
+
+html body .content.app-content {
+	overflow: inherit;
+}
+
+.content::before, .content::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.custom-sub-nav-tabs.nav-tabs>li>a {
+	font-size: 16px;
+}
+
+.nav.nav-tabs .nav-item .nav-link.active {
+    border-radius: .25rem .25rem 0 0;
+    background-color: transparent;
 }
