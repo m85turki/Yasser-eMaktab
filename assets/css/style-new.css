@@ -26,6 +26,7 @@
 	border:1px solid #cce4cf;
 	border-radius: .25rem;
     margin-bottom: 20px;
+	 overflow: hidden;
 }
 .appointment-box:hover{
 	border:1px solid #7caa83;
@@ -119,36 +120,32 @@
 
 .third-details{
 	margin-top: 8px;
+	color:#6b6f82;
+	font-size: 1rem;
+}
+.third-details i{
+	color:#c3cdcf;
 }
 .third-details .time2{
 	display: block;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-	font-size: 12px;
     color: #787878;
-	max-width: 20%;
 }
-.time2 i{
-	color: #c3cdcf;
-}
-.hall-user{
-	flex: 1 1 auto;
-    width: 1%;
-}
+
 .hall2{
 	text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+	flex: 1 1 auto;
+    width: 1%;
+	font-size: 1rem;
 }
 .number{
 	 white-space: nowrap;
-	max-width: 10%;
 }
-.number i{
-	color: #c3cdcf;
-    padding-left: 2px;
-}
+
 
 
 .time i{
@@ -156,24 +153,13 @@
 	padding-left:2px;
 }
 .hall{
-	font-size:12px;
-	color:#333333;
-	margin-top: 5px;
-}
-.hall div{
 	text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.hall i,.hall2 i{
-	color:#c3cdcf;
-	padding-left: 2px;
-}
-.hall2{
-	font-size:12px;
-	color:#333333;
-}
+
+
 .hall2 div{
 	text-overflow: ellipsis;
     overflow: hidden;
@@ -193,9 +179,10 @@
 }
 .icons a{
 	color:#7CAA83;
-	padding-right: 10px;
+	padding-right: 3px;
 	font-size:14px;
 	cursor: pointer;
+	padding-left: 3px;
 }
 .icons a:hover{
 	color:#496b4e;
@@ -270,7 +257,7 @@
 
 }
 .name{
-	font-size:12px;
+	font-size:14px;
 	display: block;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -292,7 +279,7 @@
 .card-commite{
 	padding: 10px 15px;
 }
-.number i,.hall2 i,.time2 i{
+.third-details i{
 	margin-left: 5px;
 }
 
@@ -302,9 +289,7 @@
 	.fc-center h2{
 	font-size:16px;
 	}
-	.third-details .time2{
-	max-width: 30%;
-	}
+
 }
 
 
@@ -313,17 +298,11 @@
 		padding:4px;
 		font-size:12px;
 	}
-		.hall-user{
+		.hall2{
 			width: auto;
 		}
 
-	.number{
-		max-width: 100%;
-		
-	}
-	.third-details .time2{
-		max-width: 100%;
-	}
+
 
 	}
 
@@ -335,13 +314,7 @@
 		.fc-center h2{
 			font-size:13px !important;
 		}
-		.number{
-			max-width: 100%;
-		}
-		.third-details .time2{
-			max-width: 100%;
-	}
-		.hall-user{
+	.hall2{
 			width: auto;
 		}
 
