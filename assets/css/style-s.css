@@ -575,8 +575,8 @@ body{
 
 
 .tab_content {
-	background-color: white;
-	border: solid 1px #b8c6d3;
+	background-color: #F4F6F6;
+	border: solid 1px transparent;
 	border-radius: 5px;
 
 }
@@ -2546,5 +2546,11 @@ footer.page-footer .footer-copyright {
 	background: rgba(52, 143, 85, 0.2);
 }
 
+
+.custom-card-form {
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    border-bottom: 3px solid transparent;
+}
 
 
