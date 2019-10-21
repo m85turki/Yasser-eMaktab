@@ -31,7 +31,7 @@
 	border:1px solid #7caa83;
 }
 .event-date{
-	min-width:25%;
+	min-width:100px;
 	background-color:#7caa83!important;
 }
 .event-date .fold {
@@ -132,6 +132,10 @@
     white-space: nowrap;
 	font-size: 12px;
     color: #787878;
+	max-width: 20%;
+}
+.time2 i{
+	color: #c3cdcf;
 }
 .hall-user{
 	flex: 1 1 auto;
@@ -144,6 +148,8 @@
 }
 .number{
 	 white-space: nowrap;
+	max-width: 10%;
+	overflow: hidden;
 }
 .number i{
 	color: #c3cdcf;
@@ -166,7 +172,7 @@
     white-space: nowrap;
 }
 
-.hall i{
+.hall i,.hall2 i{
 	color:#c3cdcf;
 	padding-left: 2px;
 }
@@ -275,6 +281,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+	color: #7CAA83;
+    font-weight: 600;
 }
 .custom-sub-nav-tabs.nav-tabs li{
 	padding:0px 10px;
@@ -295,9 +303,6 @@
 		padding:4px;
 		font-size:12px;
 	}
-	.event-date{
-	width:30%;
-}
 
 	}
 	@media(max-width:576px) {
