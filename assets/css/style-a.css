@@ -238,8 +238,6 @@
 
 .event-date .fold {
 	border-radius: 6px 0px 0px 0px;
-	position: absolute;
-	vertical-align: middle;
 }
 
 
@@ -646,8 +644,6 @@ h4 i.ft-maximize {
 
 #agencies .list-group-item .event-date .fold {
 	width: 125px;
-	display: inline-block;
-	float: right;
 }
 
 #agencies .list-group-item .banner-img-2 {

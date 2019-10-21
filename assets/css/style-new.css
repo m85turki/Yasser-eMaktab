@@ -36,11 +36,8 @@
 	background-color:#7caa83!important;
 }
 .event-date .fold {
-	height: 100%;
 	position: relative!important;
-	vertical-align: middle;
-    padding-top: 25px;
-	padding-bottom: 25px;
+	line-height: 2.1rem;
 }
 .appointment-summery-header{
 	padding:10px 10px;
