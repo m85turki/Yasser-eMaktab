@@ -1,7 +1,7 @@
 @import "style-new";
 
 body{
-	background: url(../images/texture.png) repeat center center #FFFFFF !important;
+	background: url(../img/texture.png) repeat center center #FFFFFF !important;
 	padding-top: 124px;
 
 }
