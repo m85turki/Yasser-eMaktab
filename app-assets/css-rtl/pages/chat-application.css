@@ -46,7 +46,6 @@
 
     text-align: center;
 
-    background-color: #fff;
     position: relative;
 }
 
@@ -87,7 +86,7 @@
 
     color: #fff;
     border-radius: 4px; 
-    background-color: #1e9ff2;
+    background-color: #348F56;
 }
 .chat-application .chats .chat-body .chat-content:before
 {
@@ -97,11 +96,9 @@
 
     width: 0;
     height: 0;
-
     content: '';
-
     border: 5px solid transparent;
-    border-right-color: #1e9ff2;
+    border-right-color: #348F56;
 }
 .chat-application .chats .chat-body .chat-content + .chat-content:before
 {
@@ -124,7 +121,7 @@
 {
     font-size: 12px;
 
-    margin: 40px 0; 
+    margin: 25px 0;
 
     text-align: center;
 
@@ -172,6 +169,9 @@
     left: 18px;
 
     cursor: pointer;
+}
+.content-right{
+	background-color: #fff;
 }
 
 @media (max-width: 767.98px)
