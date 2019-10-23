@@ -31,7 +31,7 @@
 	<!-- END Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/selects/select2.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/fonts/fontawesome/css/all.css">
 	<!-- END Custom CSS-->
 </head>
 
@@ -191,6 +191,7 @@
       <div class="sidebar-left sidebar-fixed">
         <div class="sidebar">
           <div class="sidebar-content card">
+			
     <div class="card-body chat-fixed-search">
        <div class="row">
        	<div class="col-md-12"> <fieldset class="form-group position-relative has-icon-right m-0">
@@ -343,6 +344,7 @@
         </div>
       </div>
       <div class="content-right d-none d-sm-block">
+		  <div class="arrow-space d-block d-sm-none"><i class="fas fa-arrow-right"></i></div>
         <div class="content-wrapper">
           <div class="content-header row">
           </div>
@@ -477,9 +479,16 @@
 	<script src="../../app-assets/js/scripts/pages/chat-application.js"></script>
 <script>
 	$(function(){
-	$(".media-list a").click(function(){
-			$(".content-right").css("display","none");
-		    $(".sidebar-left").css("display","block");
+		
+	$(".media-list  a").click(function(){
+		if ((screen.width<576)){
+			$(".sidebar-left").css("display","none");
+			$(".content-right").toggleClass("d-none");
+		}
+		});
+		$(".arrow-space").click(function(){
+			$(".content-right").toggleClass("d-none");
+			$(".sidebar-left").css("display","block");
 		});
 	});
 </script>
