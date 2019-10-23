@@ -253,7 +253,7 @@
 	padding-top:5px;
 
 }
-.name{
+.second-details .name{
 	font-size:14px;
 	display: block;
     text-overflow: ellipsis;
@@ -286,6 +286,11 @@
 .nav.nav-tabs .nav-item .nav-link{
     padding: .2rem 0rem;
 	}
+.panel li{
+	line-height: 1.5 !important;
+}
+
+
 
 @media (max-width: 992px) {
 	.fc-center h2{
