@@ -2,10 +2,9 @@
 	Item Name: Custom Css
 	Version: 1.0
 	Author: AmrQudah
-
 ================================================================================
   */
-.fc {
+  .fc {
 	background: #fff;
 	border-radius: .25rem;
 	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
@@ -13,15 +12,15 @@
 }
 
 .fc button {
-	color: #252e6b;
-	border-color: #252e6b;
+	color: #348F56;
+	border-color: #348F56;
 	background-color: #fff;
 }
 
 .fc button:hover {
 	color: #fff;
-	border-color: #252e6b;
-	background-color: #252e6b;
+	border-color: #348F56;
+	background-color: #348F56;
 }
 
 .fc-toolbar h2 {
@@ -54,7 +53,7 @@
 .meetings-card .header {
 	padding: 5px 10px 4px 65px;
 	text-align: right;
-	color: #252e6b;
+	color: #348F56;
 	font-size: 15px;
 	position: relative;
 	border-radius: 6px 6px 0 0;
@@ -64,7 +63,7 @@
 }
 
 .meetings-card .header a {
-	color: #252e6b;
+	color: #348F56;
 	word-wrap: break-word;
 }
 
@@ -157,11 +156,11 @@
 .meetings-card .stats strong {
 	font-size: 15px;
 	display: block;
-	color: #252e6b;
+	color: #348F56;
 }
 
 .meetings-card .stats a {
-	color: #252e6b;
+	color: #348F56;
 }
 
 .meetings-card .dates span {
@@ -333,26 +332,38 @@
 }
 
 #project-info .project-info-count .project-info-sub-icon {
-	background: #252e6b!important;
+	background: #348F56 !important
 }
 
 #project-info .project-info-count .project-info-icon {
 	background: #fafafa
 }
-
+.project-page{
+	background-color:#F4F6F6;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    padding: 20px !important;
+}
 .project-page .card .card-title {
 	font-size: 1.5rem;
-	color: #252e6b;
+	color: #2a2a2a;
 }
 
 .bg-gradient-x-info {
-	background: #7CAA83;
+	background: #348F56;
 }
 
 .bg-gradient-x-info .small-title {
 	color: #fff;
 }
 
+.bg-gradient-x-sub-info {
+	background: #7CAA83;
+}
+
+.bg-gradient-x-sub-info .small-title {
+	color: #fff;
+}
 .pr-half {
 	padding-right: 0.5rem
 }
@@ -434,7 +445,7 @@ h3.card-title i {
 }
 
 h4 i.ft-maximize {
-	color: #252e6b;
+	color: #348F56;
 }
 
 .media [class*='avatar-'] i {
@@ -515,14 +526,14 @@ h4 i.ft-maximize {
 .committee-card .header {
 	padding: 10px 15px;
 	text-align: center;
-	color: #252e6b;
+	color: #348F56;
 	font-size: 20px;
 	position: relative;
 	font-weight: bold;
 }
 
 .committee-card .header a {
-	color: #252e6b;
+	color: #348F56;
 	font-size: 15px;
 }
 
@@ -576,11 +587,11 @@ h4 i.ft-maximize {
 .committee-card .stats strong {
 	font-size: 15px;
 	display: block;
-	color: #252e6b;
+	color: #348F56;
 }
 
 .committee-card .stats a {
-	color: #252e6b;
+	color: #348F56;
 }
 
 .committee-card .dates span {
@@ -823,7 +834,7 @@ html body .content .content-wrapper .content-header-title {
 
 .bs-callout-emaktab strong{
     border-color: #b7a5a5;
-	color:#252e6b;
+	color:#348F56;
 }
 
 .halls-view .single_checkBox input[type=checkbox] + label{
@@ -867,8 +878,8 @@ background: #fff;
 	border-radius: 4px !important;
 }
 .fc-today-button{
-	color: #252e6b !important;
-	border-color: #252e6b !important;
+	color: #348F56 !important;
+	border-color: #348F56 !important;
 }
 .fc.fc-unthemed .fc{
 	background: transparent !important;
@@ -886,6 +897,7 @@ background: #fff;
 }
 .table.table-striped td , .table.centerAll td{
 border: none !important;
+text-align: center !important;
 }
 
 .table-striped thead th, .table.centerAll thead th{
@@ -893,6 +905,7 @@ border: none !important;
 	border-left:none !important;
 	border-top:1px solid #eee !important;
 	border-bottom:3px solid #eee !important;
+	text-align: center !important;
 
 }
 .table-striped .agenda-name{
@@ -1055,6 +1068,49 @@ margin-left: 5px;
             box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5);
 }
 
+/* btn-primary */
+
+.btn-primary{
+    color: #fff!important;
+    border-color: #348F56 !important; 
+    background-color: #348F56 !important;
+}
+
+.btn-primary:hover{
+    color: #fff!important;
+    border-color: #2c7948 !important;
+    background-color: #2c7948!important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus{
+    -webkit-box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5)!important;
+            box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5)!important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled{
+    color: #fff!important;
+    border-color: #449160!important;
+    background-color: #449160!important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle{
+    color: #fff!important;
+    border-color: #348F56!important; 
+    background-color: #348F56!important;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus
+{
+    -webkit-box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5)!important;
+            box-shadow: 0 0 0 .2rem rgba(107, 111, 130, .5)!important;
+}
+
+
 h4 i {
 	padding-left: .75rem !important;
 }
@@ -1063,7 +1119,13 @@ h4 i {
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.25);
 }
-
+.select2-container{
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.25)!important;
+}
+.tox-tinymce{
+	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.25)!important;	
+}
 .form-control:focus {
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem rgba(124, 170, 131, 0.50);

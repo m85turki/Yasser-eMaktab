@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 /*fonts*/
-@import "./fonts/fontawesome/css/all.css";
+@import "../fonts/fontawesome/css/all.css";
 
 .fc-toolbar.fc-header-toolbar{
-	background-color: #7caa83;
-	padding:10px;
-	margin-bottom: 0px;
+	background-color: #7caa83 !important;
+	padding:10px !important;
+	margin-bottom: 0px !important;
 	
 }
 .fc-row  thead tr th{
@@ -50,6 +50,7 @@
 .fc .fc-day-number{
     font-size: 16px;
 	padding-left:1em;
+	padding-right:1em;
 	color:#333333;
 }
 .fc-event{
@@ -113,7 +114,7 @@
 }
 .time{
 	font-size:12px;
-	color:#787878;
+	color:#787878 ;
 	margin-top: 8px;
 }
 
@@ -178,14 +179,14 @@
 	padding:1px 10px;
 }
 .icons a{
-	color:#7CAA83;
+	color:#7CAA83 !important;
 	padding-right: 3px;
 	font-size:14px;
 	cursor: pointer;
 	padding-left: 3px;
 }
 .icons a:hover{
-	color:#496b4e;
+	color:#496b4e !important;
 }
 
 .icons2{
@@ -253,7 +254,7 @@
 	padding-top:5px;
 
 }
-.second-details .name{
+.name{
 	font-size:14px;
 	display: block;
     text-overflow: ellipsis;
@@ -263,7 +264,7 @@
     font-weight: 600;
 }
 .custom-sub-nav-tabs.nav-tabs li{
-	padding: 2px 6px;
+	padding: 2px 15px;
 }
 .card-all{
 	background: #fff;
@@ -286,15 +287,10 @@
 .nav.nav-tabs .nav-item .nav-link{
     padding: .2rem 0rem;
 	}
-.panel li{
-	line-height: 1.5 !important;
-}
-
-
 
 @media (max-width: 992px) {
 	.fc-center h2{
-	font-size:16px;
+	font-size:16px !important;
 	}
 
 }
@@ -302,8 +298,8 @@
 
 @media(max-width:768px) {
 	.fc-left .fc-button,.fc-right .fc-button{
-		padding:4px;
-		font-size:12px;
+		padding:4px !important;
+		font-size:12px !important;
 	}
 		.hall2{
 			width: auto;
@@ -316,7 +312,7 @@
 @media(max-width:576px) {
 	.fc-left .fc-button,.fc-right .fc-button{
 		padding:2px!important;
-		font-size:10px;
+		font-size:10px !important;
 	}
 		.fc-center h2{
 			font-size:13px !important;

@@ -1,11 +1,10 @@
-@import "./style-new.css";
+@import "style-new";
 
 body{
-	background: url(../img/texture.png) repeat center center #FFFFFF !important;
+	background: url(../images/texture.png) repeat center center #FFFFFF !important;
 	padding-top: 124px;
 
 }
-
 /*header area*/
 
 .header-area {
@@ -597,7 +596,7 @@ div#T1 {
 
 .med-info .small-title {
 	font-size: 14px;
-	color: #4377a9;
+	color: #348F56;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
@@ -622,7 +621,7 @@ textarea.txt-area {
 	border: dotted 1px #babfc7;
 	padding: 25px;
 	border-radius: 5px;
-	color: #4377a9;
+	color: #348F56;
 }
 
 .uploadArea i {
@@ -632,7 +631,7 @@ textarea.txt-area {
 
 .attached_total {
 	font-size: 12px;
-	color: #4377a9;
+	color: #348F56;
 }
 
 .attached_del {
@@ -706,6 +705,7 @@ textarea.txt-area {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+	margin-left:10px;
 }
 
 .single_checkBox input[type="checkbox"] {
@@ -733,7 +733,7 @@ textarea.txt-area {
 	border-top: none;
 	border-bottom: 1px solid #c9d8e6;
 	font-size: 14px;
-	color: #4377a9;
+	color: #348F56;
 	font-weight: bold;
 }
 
@@ -878,9 +878,6 @@ textarea.txt-area {
 	color: #585b5e;
 }
 
-.timeSelection span:last-child:before {
-	content: ":";
-}
 
 .fLeft {
 	float: left;
@@ -985,16 +982,16 @@ textarea.txt-area {
 
 .custom-control-label::before {
 	background-color: #ffffff;
-	border: solid 1px #4377a9;
+	border: solid 1px #348F56;
 	box-shadow: inset 3px 3px 23px -12px rgba(0, 0, 0, 0.75);
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-	background-color: #4377a9;
+	background-color: #348F56;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-	background-color: #3f709f;
+	background-color: #348F56;
 }
 
 .form-control[readonly].pickatime-minmax {
@@ -2546,5 +2543,3 @@ footer.page-footer .footer-copyright {
     border: 1px solid transparent;
     border-bottom: 3px solid transparent;
 }
-
-
