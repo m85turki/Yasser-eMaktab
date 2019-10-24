@@ -481,10 +481,10 @@
 	<script src="../../app-assets/js/scripts/pages/chat-application.js"></script>
 	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
 <script>
-	var windowWidth = $(".sidebar-lef").width();
 	$(function(){
 				$(".media-list  a").click(function(){
-					if($(".windowWidth")=='100%'){
+					var widthPercentage = $('.sidebar-left').width() / $('.app-content').width() * 100;
+					if(widthPercentage > 95){
 			$(".sidebar-left").css("display","none");
 			$(".content-right").toggleClass("d-none");
 						}
@@ -494,6 +494,9 @@
 			$(".content-right").toggleClass("d-none");
 			$(".sidebar-left").css("display","block");
 		});
+		$(window).on('resize', function(){
+			
+		}
 	});
 </script>
 	
