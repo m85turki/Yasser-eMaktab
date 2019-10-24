@@ -5652,10 +5652,7 @@ select[multiple='multiple']
 }
 
 /* Input with icon */
-.has-icon-left .form-control
-{
-    padding-right: 2.5rem;
-}
+
 
 .form-control-position
 {
@@ -5913,13 +5910,7 @@ Input Icon
 }
 
 /* Input Icon left */
-.has-icon-left .form-control
-{
-    padding-right: -webkit-calc(2.75rem + 2px);
-    padding-right:    -moz-calc(2.75rem + 2px);
-    padding-right:         calc(2.75rem + 2px); 
-    padding-left: 1rem;
-}
+
 .has-icon-left .form-control.input-xl
 {
     padding-right: 3.55rem; 

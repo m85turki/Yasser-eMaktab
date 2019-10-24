@@ -185,7 +185,9 @@
 	padding-right: 5px;
 	
 }
-
+.bg-gray{
+	background-color: #EDEEF0!important;
+}
 
 textarea{
 	resize: none;
@@ -204,7 +206,11 @@ textarea.form-control {
 	
     font-size: 25px;
 	color:#348F56;
+	padding: 1px 6px;
 
+}
+.bg-gray{
+	background-color: #EDEEF0!important;
 }
 
 @media (max-width: 767.98px)
