@@ -306,7 +306,7 @@
     float: right;
 }
 .chat-application .chats .chat-left .chat-body {
-    margin-right: 30px;
+    margin-right: 0px;
     margin-left: 0;
 }
 .chat-application .chats .chat-body {
@@ -324,14 +324,8 @@
 .chat-application .chats .chat-avatar {
     float: left;
 }
-.chat-application.modal{
-    max-height: 100%;
-}
 .guests-modal {
     border: 3px solid #252e6b;
 	max-height: 100%;
-	
-}
-.videos{
 	
 }
