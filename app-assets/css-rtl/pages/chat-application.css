@@ -200,6 +200,12 @@ textarea.form-control {
 .content.all{
 	background-color: #fff;
 }
+.chat-icon{
+	
+    font-size: 25px;
+	color:#348F56;
+
+}
 
 @media (max-width: 767.98px)
 {
