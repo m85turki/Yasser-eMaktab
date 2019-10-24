@@ -21,6 +21,8 @@
 	<!-- BEGIN Page Level CSS-->
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/colors/palette-gradient.css">
+
+	
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/fullcalendar.min.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
@@ -37,10 +39,14 @@
 	<link rel="stylesheet" type="text/css" href="../../assets/css/chat-style.css">
 	<!-- END Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/selects/select2.min.css">
-
+	
 	<link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/animate/animate.css">
 	<!-- END Custom CSS-->
+
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/pages/chat-application.css">
+	
 </head>
 
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
@@ -670,7 +676,7 @@
 								</div>
 							</div>
 							<div class="single-btn mb-2">
-								<button type="button" class="btn btn-success w-100" data-toggle="modal" data-target="#startChat">
+								<button type="button" class="btn btn-success w-100" data-toggle="modal" data-target="#chatWindow">
 									<i class="fa fa-commenting-o mr-1"></i>بدء المحادثة
 								</button>
 							</div>
@@ -1594,8 +1600,10 @@
 		</div>
 	</div>
 	<!--Start Chat Window Modal-->
-	<div class="modal fade  chat-application" id="chatWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel18">
-		<div class="modal-dialog modal-dialog-centered modal-100" role="document">
+
+
+	<div class="modal fade" id="chatWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel18" aria-hidden="true">
+		<div class="modal-dialog modal-dialog modal-lg modal-dialog-centered" role="document">
 			<div class="modal-content guests-modal">
 				<div class="modal-header">
 					<h4 class="modal-title meeting-title" id="myModalLabel18">مراجعة النظام الجديد<span class="duration ml-2">00:23</span></h4>
@@ -1612,115 +1620,100 @@
 					<div class="row m-0">
 						<div class="col-lg-4 col-md-5 col-sm-6 p-0">
 							<div class="content-body">
-								<section class="chat-app-window scrollbar-p ps-container ps-theme-dark ps-active-y" data-ps-id="aafdeaec-df96-bf4d-edb7-a55f5a7c036c">
-									<div class="chats px-1">
-										  <div class="badge badge-default mb-1 date">Thursday 2/10</div>
-										  <div class="chat">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-												  <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
+								<div class="chat-application">
+									<section class="chat-app-window scrollbar-p">
+											<div class="badge badge-default mb-1">الأرشيف</div>
+											<div class="chats">
+												<div class="chats">
+												  <div class="chat">
+													<div class="chat-avatar">
+													  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+														  <img src="../../assets/img/user-1808597_960_720.png" alt="avatar" />
+													  </a>
+													</div>
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي</p>
+													  </div>
+													</div>
+												  </div>
+												  <div class="chat chat-left">
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. </p>
+													  </div>
+													  <div class="chat-content">
+														<p>سة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني</p>
+													  </div>
+													</div>
+												  </div>
+												  <div class="chat">
+													<div class="chat-avatar">
+													  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+														<img src="../../assets/img/user-1808597_960_720.png" alt="avatar" />
+													  </a>
+													</div>
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>موافق!</p>
+													  </div>
+													  <div class="chat-content">
+														<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+													  </div>
+													</div>
+												  </div>
+												  <p class="time">1 hours ago</p>
+												  <div class="chat chat-left">
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>لذلك يتم استخدام طريقة لوريم إيبسوم .</p>
+													  </div>
+													  <div class="chat-content">
+														<p>أنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام</p>
+													  </div>
+													  <div class="chat-content">
+														<p>لعديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص</p>
+													  </div>
+													</div>
+												  </div>
+												  <div class="chat">
+													<div class="chat-avatar">
+													  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+														<img src="../../assets/img/user-1808597_960_720.png" alt="avatar" />
+													  </a>
+													</div>
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>تمام</p>
+													  </div>
+													</div>
+												  </div>
+												  <div class="chat chat-left">
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>لنقم بمناقشة ذلك في الإجتماع القادم.</p>
+													  </div>
+													  <div class="chat-content">
+														<p>شكراً.</p>
+													  </div>              
+													</div>
+												  </div>
+												  <div class="chat">
+													<div class="chat-avatar">
+													  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+														<img src="../../assets/img/user-1808597_960_720.png" alt="avatar" />
+													  </a>
+													</div>
+													<div class="chat-body">
+													  <div class="chat-content">
+														<p>العفو</p>
+													  </div>
+													</div>
+												  </div>
+												</div>
 											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي</p>
-											  </div>
-											</div>
-										  </div>
-										  <div class="chat chat-left">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. </p>
-											  </div>
-											  <div class="chat-content">
-												<p>سة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني</p>
-											  </div>
-											</div>
-										  </div>
-										  <div class="chat">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>موافق!</p>
-											  </div>
-											  <div class="chat-content">
-												<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-											  </div>
-											</div>
-										  </div>
-										  <p class="time">1 hours ago</p>
-										  <div class="chat chat-left">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>لذلك يتم استخدام طريقة لوريم إيبسوم .</p>
-											  </div>
-											  <div class="chat-content">
-												<p>أنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام</p>
-											  </div>
-											  <div class="chat-content">
-												<p>لعديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص</p>
-											  </div>
-											</div>
-										  </div>
-										  <div class="chat">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>تمام</p>
-											  </div>
-											</div>
-										  </div>
-										  <div class="chat chat-left">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>لنقم بمناقشة ذلك في الإجتماع القادم.</p>
-											  </div>
-											  <div class="chat-content">
-												<p>شكراً.</p>
-											  </div>              
-											</div>
-										  </div>
-										  <div class="chat">
-											<div class="chat-avatar">
-											  <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-												<img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar">
-											  </a>
-											</div>
-											<div class="chat-body">
-											  <div class="chat-content">
-												<p>العفو</p>
-											  </div>
-											</div>
-										  </div>
-									</div>
-									<div class="message-box">
-                             <textarea placeholder="نص الكتابة" type="text" class="form-control" row="1"></textarea>
-										<a class="send" href="#"><i class="la la-send la-flip-horizontal"></i></a>
-										</div>
-							  </section>
+										</section>
+								</div>		
 							<a class="send" href="#"></a>
 							</div>
 						</div>
