@@ -36,20 +36,20 @@
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style-rtl.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style-a.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style-s.css">
-	<link rel="stylesheet" type="text/css" href="../../assets/css/chat-style.css">
 	<!-- END Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/selects/select2.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/animate/animate.css">
 	<!-- END Custom CSS-->
-
+	
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/colors/palette-tooltip.css">
 	<link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/pages/chat-application.css">
 	
+	<link rel="stylesheet" type="text/css" href="../../assets/css/chat-style.css">
 </head>
-
-<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+	
+	<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
 
 	<div class="loader_container">
@@ -1713,28 +1713,47 @@
 												</div>
 											</div>
 										</section>
-								</div>		
+										<section class="chat-app-form">
+												<form class="chat-app-input d-flex">
+												  <fieldset class="form-group position-relative mb-0">
+													<div class="form-control-position">
+													  <i class="icon-emoticon-smile"></i>
+													</div>
+													  <textarea placeholder="ادخال رسالة" type="text" class="form-control" row="1" id="iconLeft4"></textarea>
+													
+												  </fieldset>
+												  <fieldset class="form-group position-relative chat-icon ml-1 mb-0">
+													<i class="la la-send la-flip-horizontal"></i> 
+												  </fieldset>
+												</form>
+											</section>
+																														</div>		
 							<a class="send" href="#"></a>
 							</div>
 						</div>
-						<div class="col-lg-8 col-md-7 col-sm-6 p-0 video-section">
-							<div class="row videos m-0">
-								<div class="col-6 p-0">
+						<div class="col-lg-8 col-md-7 col-sm-6 p-0 video-section d-flex flex-column align-content-stretch ">
+							<div class="videos m-0 d-flex flex-wrap align-content-start scrollbar">
+								<div class="" style="width: 50%; height: 50%;">
 									<div class="participant-div">
-										<div class="ribbon">
-											<span class="name">eMaktabForms</span>
-											<div class="ribbon-icons">
+										<div class="ribbon d-flex">
+											<div class="ribbon-icons d-flex">
 												<a href="#"><img src="../../assets/img/settings.svg"></a>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item" href="#">Action</a>
+														<a class="dropdown-item" href="#">Another action</a>
+														<a class="dropdown-item" href="#">Something else here</a>
+													  </div>
 												<a class="inactive" href="#"><img src="../../assets/img/mic-no.svg"></a>
 												<a class="inactive" href="#"><img src="../../assets/img/video-no.svg"></a>
 											</div>
+											<span class="name ml-auto">eMaktabForms</span>
 										</div>
 										<div class="cam">
 											<img src="../../assets/img/employee.jpg">
 										</div>
 									</div>
 								</div>
-								<div class="col-6 p-0">
+								<div class="" style="width: 50%; height: 50%;">
 									<div class="participant-div">
 										<div class="ribbon">
 											<span class="name">eMaktabForms</span>
@@ -1749,7 +1768,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-6 p-0 flex-column">
+								<div class="" style="width: 50%; height: 50%;">
 									<div class="participant-div">
 										<div class="ribbon">
 											<span class="name">eMaktabForms</span>
@@ -1764,9 +1783,219 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="bottom d-flex">
-							<div class="controls-box  d-flex align-self-end p-1">
+								<div class="" style="width: 50%; height: 50%;">
+										<div class="participant-div">
+											<div class="ribbon">
+												<span class="name">eMaktabForms</span>
+												<div class="ribbon-icons">
+													<a href="#"><img src="../../assets/img/settings.svg"></a>
+													<a href="#"><img src="../../assets/img/mic.svg"></a>
+													<a href="#"><img src="../../assets/img/video.svg"></a>
+												</div>
+											</div>
+											<div class="cam">
+												<img src="../../assets/img/employee.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="" style="width: 50%; height: 50%;">
+										<div class="participant-div">
+											<div class="ribbon">
+												<span class="name">eMaktabForms</span>
+												<div class="ribbon-icons">
+													<a href="#"><img src="../../assets/img/settings.svg"></a>
+													<a href="#"><img src="../../assets/img/mic.svg"></a>
+													<a href="#"><img src="../../assets/img/video.svg"></a>
+												</div>
+											</div>
+											<div class="cam">
+												<img src="../../assets/img/employee.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="" style="width: 50%; height: 50%;">
+											<div class="participant-div">
+												<div class="ribbon">
+													<span class="name">eMaktabForms</span>
+													<div class="ribbon-icons">
+														<a href="#"><img src="../../assets/img/settings.svg"></a>
+														<a href="#"><img src="../../assets/img/mic.svg"></a>
+														<a href="#"><img src="../../assets/img/video.svg"></a>
+													</div>
+												</div>
+												<div class="cam">
+													<img src="../../assets/img/employee.jpg">
+												</div>
+											</div>
+										</div>
+										</div>
+							<div class="mt-auto d-flex">
+							<div class="controls-box align-items-stretch d-flex align-self-end p-1 w-100">
 								<div class="circle-icon"><i class="fa fa-commenting-o"></i></div>
 								<div class="cam-controls ml-auto">
 									<div class="circle-icon ml-1 mic"><img src="../../assets/img/mic.svg"></div>
@@ -1774,8 +2003,10 @@
 									<div class="circle-icon ml-1 camera"><img src="../../assets/img/video.svg"></div>
 								</div>
 							</div>
-							<div class="user-cam ml-auto">
-								<img src="../../assets/img/employee.jpg">
+							<div>
+								<div class="user-cam">
+									<img src="../../assets/img/employee.jpg">
+								</div>
 							</div>
 								</div>
 						</div>
@@ -1812,8 +2043,8 @@
 	<script src="../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
 	<script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
 	<script src="../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
-	<script type="text/javascript" src="../../assets/js/resize-textarea/autosize.js"></script>
-	<script>
+	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
+	  	  <script>
 		autosize(document.querySelectorAll('textarea'));
 	</script>
 
