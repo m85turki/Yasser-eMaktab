@@ -481,10 +481,13 @@
 	<script src="../../app-assets/js/scripts/pages/chat-application.js"></script>
 	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
 <script>
+	var windowWidth = $(".sidebar-lef").width();
 	$(function(){
 				$(".media-list  a").click(function(){
+					if($(".windowWidth")=='100%'){
 			$(".sidebar-left").css("display","none");
 			$(".content-right").toggleClass("d-none");
+						}
 							});
 
          $(".arrow-space").click(function(){
