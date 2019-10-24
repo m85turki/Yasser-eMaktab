@@ -188,7 +188,8 @@
 	</div>
 
 	<div class="app-content content">
-      <div class="sidebar-left sidebar-fixed">
+		
+      <div class="sidebar-left sidebar-fixed d-block d-xs-none">
         <div class="sidebar">
           <div class="sidebar-content card">
 			
@@ -349,7 +350,7 @@
           <div class="content-header row">
           </div>
           <div class="content-body">
-            <section class="chat-app-window scrollbar-p">
+            <section class="chat-app-window">
     <div class="badge badge-default mb-1">الأرشيف</div>
     <div class="chats">
         <div class="chats">
@@ -447,7 +448,7 @@
         <div class="form-control-position">
           <i class="icon-emoticon-smile"></i>
         </div>
-        <input type="text" class="form-control" id="iconLeft4" placeholder="ادخال رسالة">
+		  <textarea placeholder="ادخال رسالة" type="text" class="form-control" row="1" id="iconLeft4"></textarea>
         
       </fieldset>
       <fieldset class="form-group position-relative has-icon-left col-2 m-0">
@@ -459,6 +460,7 @@
         </div>
       </div>
     </div>
+	  
 	<!-- ////////////////////////////////////////////////////////////////////////////-->
 
 
@@ -477,16 +479,17 @@
 	<!-- END MODERN JS-->
 	<!-- BEGIN PAGE LEVEL JS-->
 	<script src="../../app-assets/js/scripts/pages/chat-application.js"></script>
+	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
 <script>
 	$(function(){
 		
 	$(".media-list  a").click(function(){
 		if ((screen.width<576)){
-			$(".sidebar-left").css("display","none");
+			$(".sidebar-left").toggleClass("d-block");
 			$(".content-right").toggleClass("d-none");
 		}
 		});
-		$(".arrow-space").click(function(){
+         $(".arrow-space").click(function(){
 			$(".content-right").toggleClass("d-none");
 			$(".sidebar-left").css("display","block");
 		});

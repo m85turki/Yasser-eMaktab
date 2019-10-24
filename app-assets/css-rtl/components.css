@@ -4454,25 +4454,7 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu-footer .content
 {
     background-color: rgba(0, 0, 0, .4);
 }
-.ps-theme-dark > .ps-scrollbar-x-rail
-{
-    position: absolute;
-    bottom: 3px;
 
-    display: none;
-    /* there must be 'bottom' for ps-scrollbar-x-rail */
-
-    height: 8px; 
-
-    -webkit-transition: background-color .2s linear, opacity .2s linear;
-       -moz-transition: background-color .2s linear, opacity .2s linear;
-         -o-transition: background-color .2s linear, opacity .2s linear;
-            transition: background-color .2s linear, opacity .2s linear;
-
-    opacity: 0;
-    /* please don't change 'position' */
-    border-radius: 4px;
-}
 .ps-theme-dark > .ps-scrollbar-x-rail > .ps-scrollbar-x
 {
     position: absolute;
