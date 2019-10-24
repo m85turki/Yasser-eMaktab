@@ -480,6 +480,9 @@
 	<!-- BEGIN PAGE LEVEL JS-->
 	<script src="../../app-assets/js/scripts/pages/chat-application.js"></script>
 	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
+	  	  <script>
+		autosize(document.querySelectorAll('textarea'));
+	</script>
 <script>
 	$(function(){
 				$(".media-list  a").click(function(){
@@ -494,11 +497,10 @@
 			$(".content-right").toggleClass("d-none");
 			$(".sidebar-left").css("display","block");
 		});
-		$(window).on('resize', function(){
-			
-		}
+
 	});
 </script>
+
 	
 
 	<!-- END PAGE LEVEL JS-->
