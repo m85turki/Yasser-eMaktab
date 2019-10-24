@@ -2290,26 +2290,21 @@ a.dropdown-item i{
 	padding: 0px;
 }
 
-.dropdown .dropdown-menu.dropdown-header-menu-left{
-	left: -10px !important;
-	right: inherit;
+.dropdown .dropdown-menu.dropdown-header-menu-right{
+	right: -10px !important;
+	left: inherit !important;
 	margin-top: 10px;
 	padding: 0px;
 }
 
-.dropdown .dropdown-menu.dropdown-header-menu-right{
-	right: -10px !important;
-	left: inherit;
+.dropdown .dropdown-menu.dropdown-vedio-menu-right{
+	right: 0px !important;
+	left: inherit!important;
 	margin-top: 10px;
 	padding: 0px;
+	transform: translate3d(0px, 20px, 0px) !important;
 }
 
-.dropdown .dropdown-menu.dropdown-header-menu-right{
-	right: -10px !important;
-	left: inherit;
-	margin-top: 10px;
-	padding: 0px;
-}
 
 
 .dropdown-item.active, .dropdown-item:active {
