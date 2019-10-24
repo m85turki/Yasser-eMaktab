@@ -109,9 +109,6 @@
 #chatWindow .modal-body .row {
 	height: 100%;
 }
-#chatWindow .modal-body .row .video-section{
-	height: 100%;
-}
 #chatWindow.chat-application .chat-app-window {
 	height: 100%;
 	padding: 0;	
@@ -128,7 +125,7 @@
 .chat-application .chats .chat-body {
     display: block;
     overflow: hidden;
-    margin: 10px 0 0 30px;
+    margin: 10px 6px 0 0px !important;
 }
 #chatWindow.chat-application .chats .chat-avatar {
     margin-top: 10px;
@@ -182,7 +179,7 @@
 #chatWindow .participant-div {
 	position: relative;
 	height: 100%;
-	border: 3px solid #ddd;
+	border: 2px solid #F4F8F9;
 }
 #chatWindow .participant-div .ribbon {
 	width: 100%;
@@ -199,9 +196,6 @@
 }
 #chatWindow .participant-div .cam>* {
 	width: 100%;
-	height: 100%;
-}
-#chatWindow .video-section {
 	height: 100%;
 }
 #chatWindow .video-section .row {
@@ -225,11 +219,25 @@
 	background-color: #e3ebf3;
 }
 .user-cam {
-	width: 30%;
-	border: 3px solid #40477d;
+	width: 70px;
+	height: 100%;
+	border: 3px solid #ffffff;
+	position: relative;
+
+	display: block;
+	-webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: width 0.5s, height 0.51s;
 }
+
+	.user-cam:hover{
+		width: 150px;
+	}
+
 .user-cam img {
 	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
 }
 .bottom{
 	position: absolute;
@@ -238,10 +246,6 @@
 }
 .controls-box {
 	background-color: #fff;
-	text-align: right;
-	flex: 1 1 auto;
-    width: 1%;
-	height: 40%;
 }
 
 .cam-controls {
@@ -289,12 +293,12 @@
     display: block;
     float: left;
     clear: both;
-    margin: 0 0 10px 20px;
+    margin: 0 0 10px 6px;
     padding: 8px 15px;
     text-align: left;
     color: #fff;
     border-radius: 4px;
-    background-color: #1e9ff2;
+    background-color: #348F56;
 }
 #chatWindow.chat-application .chats .chat-avatar {
     margin-top: 10px;
@@ -316,7 +320,7 @@
 }
 .chat-application .chats .chat-left .chat-content {
     float: right;
-    margin: 0 20px 10px 0;
+    margin: 0 6px 10px 10px;
     text-align: right;
     color: #6b6f82;
     background-color: #edeef0;
@@ -325,7 +329,37 @@
     float: left;
 }
 .guests-modal {
-    border: 3px solid #252e6b;
+    border: 3px solid #ffffff;
 	max-height: 100%;
-	
+}
+
+.chat-application .chats .chat-body {
+    margin: 10px 0 0 0px;
+}
+
+.modal-content .chat-application .chat-app-window {
+	padding: 10px 0px;
+	overflow-y: auto;
+	height: auto !important;
+
+    max-height: -webkit-calc(100vh - 66px);
+    max-height: -moz-calc(100vh - 66px);
+    max-height: calc(100vh - 66px);
+}
+
+.scrollbar{
+	overflow-y: auto;
+	position: relative;
+
+	height: auto !important;
+
+    max-height: -webkit-calc(100vh - 134px);
+    max-height: -moz-calc(100vh - 134px);
+    max-height: calc(100vh - 134px);
+
+}
+
+
+.videos{
+	min-height: 400px;
 }
