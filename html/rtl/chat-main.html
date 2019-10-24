@@ -189,7 +189,7 @@
 
 	<div class="app-content content">
 		
-      <div class="sidebar-left sidebar-fixed d-block d-xs-none">
+      <div class="sidebar-left sidebar-fixed">
         <div class="sidebar">
           <div class="sidebar-content card">
 			
@@ -344,8 +344,8 @@
 </div>
         </div>
       </div>
-      <div class="content-right d-none d-sm-block">
-		  <div class="arrow-space d-block d-sm-none"><i class="fas fa-arrow-right"></i></div>
+      <div class="content-right d-none d-md-block">
+		  <div class="arrow-space d-block d-md-none"><i class="fas fa-arrow-right"></i></div>
         <div class="content-wrapper">
           <div class="content-header row">
           </div>
@@ -444,7 +444,7 @@
 </section>
 <section class="chat-app-form">
     <form class="chat-app-input d-flex">
-      <fieldset class="form-group position-relative has-icon-left col-10 m-0">
+      <fieldset class="form-group position-relative has-icon-left col-10 pl-3 m-0">
         <div class="form-control-position">
           <i class="icon-emoticon-smile"></i>
         </div>
@@ -482,13 +482,11 @@
 	  <script src="../../assets/js/resize-textarea/autosize.js"></script>
 <script>
 	$(function(){
-		
-	$(".media-list  a").click(function(){
-		if ((screen.width<576)){
-			$(".sidebar-left").toggleClass("d-block");
+				$(".media-list  a").click(function(){
+			$(".sidebar-left").css("display","none");
 			$(".content-right").toggleClass("d-none");
-		}
-		});
+							});
+
          $(".arrow-space").click(function(){
 			$(".content-right").toggleClass("d-none");
 			$(".sidebar-left").css("display","block");

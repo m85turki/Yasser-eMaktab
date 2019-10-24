@@ -140,7 +140,7 @@ html body .pace .pace-progress
 /*
 * Col 3 layout for detached and general type
 */
-@media (min-width: 992px)
+@media (min-width: 769px)
 {
     body .content-right
     {
