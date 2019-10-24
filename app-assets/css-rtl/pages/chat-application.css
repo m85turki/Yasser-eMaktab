@@ -3,7 +3,8 @@
 .chat-application .content-wrapper,
 .chat-application .content-body
 {
-    height: 100%;
+	position: relative;
+	height: calc(100vh - 92px);
 	
 }
 
@@ -40,9 +41,9 @@
 {
     overflow-y: scroll;
 
-    height: -webkit-calc(100vh - 151px);
-    height:    -moz-calc(100vh - 151px);
-    height:         calc(100vh - 151px);
+    height: -webkit-calc(100vh - 152px);
+    height:    -moz-calc(100vh - 152px);
+    height:         calc(100vh - 152px);
 	padding: 30px 30px;
 
     text-align: center;
@@ -51,8 +52,10 @@
 }
 
 .chat-application .chat-app-form
-{
-    position: relative;
+{ 
+	position: absolute;
+    width: 100%;
+    bottom: 0px;
 
     overflow: hidden; 
 
@@ -191,6 +194,12 @@ textarea.form-control {
     height: 40px;
 	max-height: 60px;
 }
+.has-icon-left {
+	flex:1 auto;
+}
+.content.all{
+	background-color: #fff;
+}
 
 @media (max-width: 767.98px)
 {
@@ -214,6 +223,9 @@ textarea.form-control {
 	.chat-application .chat-fixed-search{
 		width: 100%;
 	}
+	.chat-application .chat-app-form{
+		bottom:17px;
+	}
 
 }
 
@@ -227,6 +239,9 @@ textarea.form-control {
 }
 		.content-right{
 		 margin-top: auto;
+	}
+		.chat-application .chat-app-form{
+		bottom:0px;
 	}
 
 }
