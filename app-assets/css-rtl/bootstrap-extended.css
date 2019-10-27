@@ -2628,6 +2628,7 @@ select.form-control
 .badge-danger
 {
     background-color: #ff4961;
+	width: 25px;
 }
 .badge-danger.badge-glow
 {

@@ -212,10 +212,8 @@ textarea.form-control {
 .bg-gray{
 	background-color: #EDEEF0!important;
 }
-#users-list{
-	width: 300px;
-}
-.media.border-0 .media-body{
+
+.media.border-0 .media-body,.border-right-info .media-body{
 	flex: 1 auto;
     width: 1%;
 }
@@ -225,6 +223,12 @@ textarea.form-control {
     overflow: hidden;
 	margin: 0px;
 }
+.text-muted{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 @media (max-width: 767.98px)
 {
     .chat-application .chat-app-window
@@ -233,10 +237,7 @@ textarea.form-control {
         height:    -moz-calc(100vh - 132px);
         height:         calc(100vh - 132px);
     }
-	.chat-application .app-content,
-.chat-application .content-right,
-.chat-application .content-wrapper,
-.chat-application .content-body
+.chat-application .content-right
 {
 	z-index: 2;
 
