@@ -211,6 +211,7 @@ textarea.form-control {
 }
 .bg-gray{
 	background-color: #EDEEF0!important;
+	color:black;
 }
 
 @media (max-width: 767.98px)
