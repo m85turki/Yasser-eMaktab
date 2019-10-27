@@ -50,7 +50,7 @@
 
     overflow: hidden; 
 
-    padding: 10px 10px;
+    padding: 5px 10px;
 
     background-color: #edeef0;
 }
@@ -58,7 +58,7 @@
 .chat-application .chats
 {
     padding: 0;
-	height: calc(100vh - 233px);
+	height: calc(100vh - 213px);
     overflow-y: scroll;
 }
 .chat-application .chats .chat-body
