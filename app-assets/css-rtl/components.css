@@ -13,9 +13,9 @@ html body
 
     direction: rtl;
 }
-html body.fixed-navbar
+html body
 {
-    padding-top: 5rem;
+ padding-top: 124px;
 }
 html body a
 {
@@ -150,6 +150,9 @@ html body .pace .pace-progress
         width:    -moz-calc(100% - 300px);
         width:         calc(100% - 300px);
     }
+	.sidebar-left{
+		width:300px;
+	}
     body .content-left
     {
         float: right; 

@@ -4,7 +4,6 @@
 .chat-application .content-body
 {
 	position: relative;
-	height: calc(100vh - 92px);
 	
 }
 
@@ -22,7 +21,6 @@
 
 .chat-application .chat-fixed-search
 {
-    position: fixed;
     z-index: 999;
 
     width: 300px;
@@ -31,24 +29,17 @@
     background: #fff;
 }
 
-.chat-application .users-list-padding
-{
-    padding-top: 83px;
-    padding-bottom: 60px;
-}
+
 
 .chat-application .chat-app-window
 {
-    overflow-y: scroll;
 
-    height: -webkit-calc(100vh - 152px);
-    height:    -moz-calc(100vh - 152px);
-    height:         calc(100vh - 152px);
-	padding: 30px 30px;
-
+	padding: 0px 10px;
     text-align: center;
-
+    padding-left: 5px;
     position: relative;
+	height: -webkit-calc(100vh - 128px);
+	height: calc(100vh - 128px);
 }
 
 .chat-application .chat-app-form
@@ -67,6 +58,8 @@
 .chat-application .chats
 {
     padding: 0;
+	height: calc(100vh - 233px);
+    overflow-y: scroll;
 }
 .chat-application .chats .chat-body
 {
@@ -176,7 +169,6 @@
 }
 .content-right{
 	background-color: #fff;
-		 margin-top: 22px;
 }
 .arrow-space{
 	background-color:#348F56;
@@ -227,6 +219,10 @@ textarea.form-control {
 	text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+.media-list{
+	overflow-y:scroll;
+	height: calc(100vh - 211px)!important;
 }
 
 @media (max-width: 767.98px)
