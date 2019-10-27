@@ -757,11 +757,7 @@ h4 i.ft-maximize {
 	background: #eee;
 }
 
-.chat-act,
-.chat-act .list-group-item-heading,
-.chat-act .list-group-item-text {
-	color: #fff !important;
-}
+
 
 .chat-application .sidebar-left {
     margin-top: 54px;

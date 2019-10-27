@@ -211,9 +211,20 @@ textarea.form-control {
 }
 .bg-gray{
 	background-color: #EDEEF0!important;
-	color:black;
 }
-
+#users-list{
+	width: 300px;
+}
+.media.border-0 .media-body{
+	flex: 1 auto;
+    width: 1%;
+}
+.media-body .list-group-item-heading{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	margin: 0px;
+}
 @media (max-width: 767.98px)
 {
     .chat-application .chat-app-window
